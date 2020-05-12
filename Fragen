@@ -5,3 +5,7 @@
 
 3.) Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren,
     wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
+
+4.) Einführung
+a) eine LED blinken lassen
+b) ein Hello World über die Debug-Schnittstelle ausgeben
