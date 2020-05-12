@@ -1,0 +1,7 @@
+1.) Herausfinden, welchen Unterschied der Punkt „Enable Trustzone“ macht? 
+
+
+2.) Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? Was machen die?
+
+3.) Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren,
+    wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
