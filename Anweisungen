@@ -33,3 +33,27 @@ Herausfinden, welchen Unterschied der Punkt „Enable Trustzone“ macht.
 Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? 
 Was machen die? Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren, 
 wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
+
+######################################################################################################
+
+Wenn die Boards dann angekommen sind, können die ersten Schritte in 2 Richtungen gehen. 
+Ihr könnt euch sofort auf das MCU Firmware Package stürzen und versuchen herauszufinden, wie ihr das aufs Board bekommt.
+Oder ihr macht euch erst noch etwas besser mit dem Board vertraut. 
+Wenn ihr euch für letzteres entscheidet könnte man zum Beispiel mal:
+a) eine LED blinken lassen
+b) ein Hello World über die Debug-Schnittstelle ausgeben
+
+a) ist relativ generisch. Wenn ihr hier keinen Beispielcode oder ein Youtube-Video zu genau diesem Board findet,
+hilft euch sehr wahrscheinlich auch ein Tutorial zu irgendeinem anderen STM Nucleo. Was muss man tun? 
+In den Docs herausfinden, welche LEDs es gibt. Sich für eine LED entscheiden. Herausfinden,
+über welche GPIO Pins diese LED gesteuert wird. Dann die sogenannte Peripheral Clock für diesen GPIO-Block enablen,
+indem man das entsprechende Bit im entsprechenden Register setzt. Ich kenne dieses konkrete Board auch noch nicht,
+in einem anderen STM Board heißt das Register zB RCC_AHB1ENR. AHB1 ist der Bus, an dem dieser GPIO-Block dran hängt. 
+Wenn ihr hier Hilfe braucht und euch nicht recht in den Docs zurechtfindet, meldet euch bitte. 
+Wenn die Clock aktiviert ist, dann muss das entsprechende Mode Register für diesen GPIO Pin auf Output gesetzt werden. 
+Denn wir wollen den Zustand der LED ja schreiben und nicht lesen.
+Und zuletzt dann das Output Data Register für diesen GPIO Pin am entsprechenden Bit setzen. 
+Hier muss man zuerst mal ganz viel in den Docs herumlesen, bis man herausgefunden hat, 
+wie die Register heißen und welche Bits man jeweils setzen möchte.
+Das kann man auch schon machen, bevor man das echte Board hat.
+Den Code könnte man auch schon schreiben und dann testen, sobald das Board angekommen ist.
