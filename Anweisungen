@@ -1,0 +1,35 @@
+Ich würde zumindest für den Einstieg zunächst die IDE „STM32CubeIDE“ empfehlen:
+https://www.st.com/en/development-tools/stm32cubeide.html#get-software
+
+Diese ist für alle Plattformen verfügbar und bringt ein paar komfortable Features mit. 
+Bei Einrichtung eines neuen Projekts kann man die Zielplattform auswählen und bekommt 
+dann schon ein paar Startup-Code-Files geschenkt.
+Damit kommt man dann recht schnell dazu, dass das Board mit einem spricht.
+Richtet euch doch mal diese IDE ein und versucht herauszufinden, ob und wie man die Dateien 
+aus dem STM MCU Firmware Package importieren kann. Meine Hoffnung wäre (da beides aus demselben Haus kommt), 
+dass in dem Firmware Package vielleicht sogar schon entsprechende Projektdateien enthalten sind.
+
+#####################################################################################################
+
+Wenn ihr die IDE heruntergeladen habt, könnt ihr ein neues Projekt für die Ziel-Plattform wie folgt erzeugen:
+File —> New —> STM32 Project öffnet ein neues Fenster. Das Laden kann einen Moment dauern.
+
+In diesem Fenster wählt ihr oben links den Tab „Board Selector“ aus und gebt in das Suchfeld
+unter „Part Number Search“ die Kennung eures Boards ein: „NUCLEO-L552ZE-Q“. 
+Dann wählt ihr das Board in der Übersicht rechts aus. Nun habt ihr die Möglichkeit, 
+auch direkt das Datasheet oder weitere Docs zu dem Board von dort herunterzuladen.
+Auf jeden Fall empfehlenswert sind das Datasheet und das User Manual. 
+Ihr werdet voraussichtlich viel mit Dokumentationen arbeiten müssen. Wollt ihr das neue Projekt erzeugen, klickt ihr unten rechts auf „Next“. 
+
+#####################################################################################################
+
+Attached Files: telegram-cloud-document-4-5897780835246934197.jpg
+
+Dies ist dann die Eingabemaske für die weiteren Projektinformationen.
+Achtet darauf, unten beim „Targeted Project Type“ Empty auszuwählen,
+außer ihr habt euch so sehr eingelesen, dass wir wisst, was die andere Auswahl macht 😉 
+Was man schon einmal machen könnte, bevor die Boards angekommen sind: 
+Herausfinden, welchen Unterschied der Punkt „Enable Trustzone“ macht.
+Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? 
+Was machen die? Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren, 
+wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
