@@ -1,5 +1,17 @@
 1.) Herausfinden, welchen Unterschied der Punkt „Enable Trustzone“ macht? 
 
+TrustZone for Armv8-M Features:
+    - Secure thread - Trusted code/data Secure handler - Trusted device drivers
+    - Secure interrupts
+    - Hardware transition
+    - Secure Memory Management
+    - Secure code, data and memory
+    - Trusted boot
+    - "Trusted Firmware-M"
+    - Verschlüssung (Cryptography: hash,  symmetric,and asymmetric cryptographic algorithms)
+    
+Hinweis: Prefix _TrustZone zeigt TrustZone-enabled; Factory default => TrustZone is disabbled
+    
 
 2.) Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? Was machen die?
 
