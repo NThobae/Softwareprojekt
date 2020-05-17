@@ -11,6 +11,7 @@ TrustZone for Armv8-M Features:
     - Verschlüssung (Cryptography: hash,  symmetric,and asymmetric cryptographic algorithms)
     
 Hinweis: Prefix _TrustZone zeigt TrustZone-enabled; Factory default => TrustZone is disabbled
+Option bit TZEN = 1 um TrustZone zu aktivieren
     
 
 2.) Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? Was machen die?
