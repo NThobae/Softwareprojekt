@@ -16,8 +16,16 @@ Option bit TZEN = 1 um TrustZone zu aktivieren
 
 2.) Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? Was machen die?
 
+Unterteilung der Ordnerstruktur in Secure und NonSecure
+
+Die Funktion secure_add_one als Schnittstelle
+This function is Secure and is call-able from Non-Secure regions
+
+
 3.) Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren,
     wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
+    
+    Auf das GIT und dessen Quellcode zugreifen. 
 
 4.) Einführung
 a) eine LED blinken lassen
