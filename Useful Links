@@ -15,3 +15,18 @@ https://www.st.com/resource/en/user_manual/dm00669466-description-of-stm32l5-hal
 
 start stm32cubeide with Nucleo
 https://www.youtube.com/watch?v=hyZS2p1tW-g&list=PLEBQazB0HUyRYuzfi4clXsKUSgorErmBv
+
+36C3 - TrustZone-M(eh): Breaking ARMv8-M's security:
+https://www.youtube.com/watch?v=4u6BAH8mEDw
+
+alles über stm32l5xx:
+https://www.st.com/content/st_com/en/support/learning/stm32-education/stm32-online-training/stm32l5-online-training.html
+
+STM32CubeIDE basics - 05 TIM PWM HAL lab:
+https://www.youtube.com/watch?v=-AFCcfzK9xc
+
+alle nützliche WEBINAR 
+https://developer.arm.com/ip-products/security-ip/trustzone/trustzone-for-cortex-m
+
+cubeprogrammer configuration: 
+https://www.youtube.com/watch?v=5RSy7xAoonU
