@@ -1,0 +1,6 @@
+core_cm33.h:2937:26:ITM_SendChar	16	static,ignoring_inline_asm
+main.c:60:5:_write	32	static
+main.c:75:5:main	8	static
+main.c:123:6:SystemClock_Config	104	static
+main.c:171:13:MX_GPIO_Init	32	static
+main.c:194:6:Error_Handler	4	static

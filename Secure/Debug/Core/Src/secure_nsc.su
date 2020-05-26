@@ -1,0 +1,2 @@
+secure_nsc.c:49:20:SECURE_RegisterCallback	16	static
+secure_nsc.c:69:20:Toggle_Pin	8	static

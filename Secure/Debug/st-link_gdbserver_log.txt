@@ -1,0 +1,1219 @@
+[0.001] initConfigParams():  Configuration flags start
+[0.001] initConfigParams():   external-init                  false
+[0.001] initConfigParams():   pend-halt-timeout              (null)
+[0.001] initConfigParams():   halt                           false
+[0.001] initConfigParams():   config-file                    ""
+[0.001] initConfigParams():   persistent                     false
+[0.001] initConfigParams():  +log-file                       "/Users/windy/STM32CubeIDE/workspace_1.3.0/TrustZone-ToggleLED/Secure/Debug/st-link_gdbserver_log.txt"
+[0.001] initConfigParams():  +log-level                      31
+[0.001] initConfigParams():  +port-number                    61234
+[0.001] initConfigParams():  +verbose                        true
+[0.001] initConfigParams():   refresh-delay                  15
+[0.001] initConfigParams():  +verify                         true
+[0.001] initConfigParams():  +swd                            true
+[0.001] initConfigParams():   swo-port                       61234
+[0.001] initConfigParams():   cpu-clock                      8000000
+[0.001] initConfigParams():   swo-clock-div                  128
+[0.001] initConfigParams():  +initialize-reset               true
+[0.001] initConfigParams():   debuggers                      false
+[0.001] initConfigParams():   serial-number                  ""
+[0.001] initConfigParams():  +apid                           0
+[0.001] initConfigParams():   attach                         false
+[0.001] initConfigParams():   shared                         false
+[0.001] initConfigParams():   erase-all                      false
+[0.001] initConfigParams():   memory-map                     ""
+[0.001] initConfigParams():   ext-memory-loaders             false
+[0.001] initConfigParams():   extload                        ""
+[0.001] initConfigParams():  +stm32cubeprogrammer-path       "/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin"
+[0.001] initConfigParams():   temp-path                      ""
+[0.001] initConfigParams():   preserve-temps                 false
+[0.001] initConfigParams():   frequency                      -1
+[0.001] initConfigParams():   licenses                       false
+[0.001] initConfigParams():   ignore-rest                    false
+[0.001] initConfigParams():   version                        false
+[0.001] initConfigParams():   help                           false
+[0.001] initConfigParams():  Configuration flags end
+[0.002] init():  STMicroelectronics ST-LINK GDB server. Version 5.5.0
+Copyright (c) 2019, STMicroelectronics. All rights reserved.
+[0.013] Device_Initialise():  Target connection mode: Under reset
+[0.027] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[0.034] Device_Initialise():  COM frequency = 4000 kHz
+[0.034] Device_Initialise():  ST-LINK Firmware version : V2J36M26
+[0.034] Device_Initialise():  Device ID: 0x472
+[0.034] Device_Initialise():  PC: 0xfffffffe
+[0.035] Device_GetStatus():  ST-LINK device status: HALT_MODE
+[0.035] Device_Initialise():  ST-LINK detects target voltage = 3.25 V
+[0.036] Device_Initialise():  TrustZone: Inactive
+[0.037] Device_Initialise():  ST-LINK device status: HALT_MODE
+[0.037] initServerContext():  ST-LINK device initialization OK
+[0.038] WaitConnection():  Waiting for connection on port 61234...
+[2.043] WaitConnection():  Accepted connection on port 61234...
+[2.044] read():  <11> Rx: +$qSupported:multiprocess+;swbreak+;hwbreak+;qRelocInsn+;fork-events+;vfork-events+;exec-events+;vContSupported+;QThreadEvents+;no-resumed+#df
+[2.055] write():  <11> Tx: +
+[2.055] write():  <11> Tx: $PacketSize=c00;qXfer:memory-map:read+;qXfer:features:read+;QStartNoAckMode+;QNonStop+;qXfer:threads:read+;hwbreak+;swbreak+#f2
+[2.055] read():  <11> Rx: +
+[2.055] read():  <11> Rx: $vMustReplyEmpty#3a
+[2.056] write():  <11> Tx: +
+[2.056] write():  <11> Tx: $#00
+[2.056] read():  <11> Rx: +$QStartNoAckMode#b0
+[2.067] write():  <11> Tx: +
+[2.067] write():  <11> Tx: $OK#9a
+[2.067] read():  <11> Rx: +
+[2.067] read():  <11> Rx: $Hg0#df
+[2.067] write():  <11> Tx: $#00
+[2.067] read():  <11> Rx: $qXfer:features:read:target.xml:0,bfb#75
+[2.068] write():  <11> Tx: $l<?xml version="1.0"?><!-- Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.     Copying and distribution of this file, with or without modification,     are permitted in any medium without royalty provided the copyright     notice and this notice are preserved.  --><!DOCTYPE target SYSTEM "gdb-target.dtd"><target><feature name="org.gnu.gdb.arm.m-profile">  <reg name="r0" bitsize="32"/>  <reg name="r1" bitsize="32"/>  <reg name="r2" bitsize="32"/>  <reg name="r3" bitsize="32"/>  <reg name="r4" bitsize="32"/>  <reg name="r5" bitsize="32"/>  <reg name="r6" bitsize="32"/>  <reg name="r7" bitsize="32"/>  <reg name="r8" bitsize="32"/>  <reg name="r9" bitsize="32"/>  <reg name="r10" bitsize="32"/>  <reg name="r11" bitsize="32"/>  <reg name="r12" bitsize="32"/>  <reg name="sp" bitsize="32" type="data_ptr"/>  <reg name="lr" bitsize="32"/>  <reg name="pc" bitsize="32" type="code_ptr"/>  <reg name="xpsr" bitsize="32" regnum="25"/></feature><feature name="org.gnu.gdb.arm.vfp">  <reg name="d0" bitsize="64" type="ieee_double"/>  <reg name="d1" bitsize="64" type="ieee_double"/>  <reg name="d2" bitsize="64" type="ieee_double"/>  <reg name="d3" bitsize="64" type="ieee_double"/>  <reg name="d4" bitsize="64" type="ieee_double"/>  <reg name="d5" bitsize="64" type="ieee_double"/>  <reg name="d6" bitsize="64" type="ieee_double"/>  <reg name="d7" bitsize="64" type="ieee_double"/>  <reg name="d8" bitsize="64" type="ieee_double"/>  <reg name="d9" bitsize="64" type="ieee_double"/>  <reg name="d10" bitsize="64" type="ieee_double"/>  <reg name="d11" bitsize="64" type="ieee_double"/>  <reg name="d12" bitsize="64" type="ieee_double"/>  <reg name="d13" bitsize="64" type="ieee_double"/>  <reg name="d14" bitsize="64" type="ieee_double"/>  <reg name="d15" bitsize="64" type="ieee_double"/>  <reg name="fpscr" bitsize="32" type="int" group="float"/>  <reg name="PRIMASK" bitsize="32" regnum="93"/>  <reg name="BASEPRI" bitsize="32" regnum="94"/>  <reg name="FAULTMASK" bitsize="32" regnum="95"/>  <reg name="CONTROL" bitsize="32" regnum="96"/>  <reg name="MSP" bitsize="32" regnum="97"/>  <reg name="PSP" bitsize="32" regnum="98"/>  <reg name="MSP_NS" bitsize="32" regnum="99"/>  <reg name="PSP_NS" bitsize="32" regnum="100"/>  <reg name="MSP_S" bitsize="32" regnum="101"/>  <reg name="PSP_S" bitsize="32" regnum="102"/>  <reg name="MSPLIM_S" bitsize="32" regnum="103"/>  <reg name="PSPLIM_S" bitsize="32" regnum="104"/>  <reg name="MSPLIM_NS" bitsize="32" regnum="105"/>  <reg name="PSPLIM_NS" bitsize="32" regnum="106"/>  <reg name="PRIMASK_S" bitsize="32" regnum="107"/>  <reg name="BASEPRI_S" bitsize="32" regnum="108"/>  <reg name="FAULTMASK_S" bitsize="32" regnum="109"/>  <reg name="CONTROL_S" bitsize="32" regnum="110"/>  <reg name="PRIMASK_NS" bitsize="32" regnum="111"/>  <reg name="BASEPRI_NS" bitsize="32" regnum="112"/>  <reg name="FAULTMASK_NS" bitsize="32" regnum="113"/>  <reg name="CONTROL_NS" bitsize="32" regnum="114"/>    </feature></target>#c7
+[2.069] read():  <11> Rx: $QNonStop:1#8d
+[2.069] write():  <11> Tx: $OK#9a
+[2.069] read():  <11> Rx: $qXfer:threads:read::0,bfb#fb
+[2.070] write():  <11> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#8b
+[2.070] read():  <11> Rx: $qAttached#8f
+[2.070] write():  <11> Tx: $1#31
+[2.070] read():  <11> Rx: $qTStatus#49
+[2.070] write():  <11> Tx: $#00
+[2.071] read():  <11> Rx: $?#3f
+[2.071] write():  <11> Tx: $T05thread:1;core:0;#25
+[2.071] read():  <11> Rx: $vStopped#55
+[2.072] write():  <11> Tx: $OK#9a
+[2.073] read():  <11> Rx: $Hg1#e0
+[2.073] write():  <11> Tx: $#00
+[2.073] read():  <11> Rx: $g#67
+[2.084] write():  <11> Tx: $0000000000000000000000000000000000000000000000000000000000000000fffffffffffffffffffffffffffffffffffffffffcfffffffffffffffeffffff0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000fcffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#2a
+[2.084] read():  <11> Rx: $qXfer:memory-map:read::0,bfb#14
+[2.085] write():  <11> Tx: $l<?xml version="1.0"?>\x0a<!DOCTYPE memory-map\x0a          PUBLIC "+//IDN gnu.org//DTD GDB Memory Map V1.0//EN"\x0a                 "http://sourceware.org/gdb/gdb-memory-map.dtd"><memory-map><memory type="ram" start="0x0" length="0x8000000"/><memory type="flash" start="0x8000000" length="0x80000">\x0a<property name="blocksize">0x800</property>\x0a</memory><memory type="ram" start="0x8080000" length="0x3f80000"/><memory type="flash" start="0xc000000" length="0x80000">\x0a<property name="blocksize">0x800</property>\x0a</memory><memory type="ram" start="0xc080000" length="0xf3f7ffff"/></memory-map>#9f
+[2.085] read():  <11> Rx: $mfffffffe,1#f9
+[2.085] handlePacket():  Reading 0x1 bytes of memory from addr 0xfffffffe 
+[2.086] write():  <11> Tx: $E31#a9
+[2.086] read():  <11> Rx: $qSymbol::#5b
+[2.086] write():  <11> Tx: $#00
+[2.086] read():  <11> Rx: $qXfer:threads:read::0,bfb#fb
+[2.086] write():  <11> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#8b
+[2.089] read():  <11> Rx: $qRcmd,57726974654450203078322030783030303030304630#f6
+[2.089] write():  <11> Tx: $4f2e4b2e0a#ef
+[2.089] read():  <11> Rx: $me000ee08,4#f4
+[2.089] handlePacket():  Reading 0x4 bytes of memory from addr 0xe000ee08 
+[2.090] write():  <11> Tx: $00000000#80
+[2.092] read():  <11> Rx: $qRcmd,52656164415020307832#29
+[2.094] write():  <11> Tx: $4f2e4b2e3a307865303066656664300a#96
+[2.096] read():  <11> Rx: $me00fefd0,20#85
+[2.096] handlePacket():  Reading 0x20 bytes of memory from addr 0xe00fefd0 
+[2.096] write():  <11> Tx: $0000000000000000000000000000000072000000040000000a00000000000000#3e
+[2.098] read():  <11> Rx: $qRcmd,7265736574#37
+[2.098] STM32_AppReset():  Enter STM32_AppReset() function 
+[2.103] STM32_AppReset():  NVIC_DFSR_REG = 0x00000009
+[2.105] STM32_AppReset():  NVIC_CFGFSR_REG = 0x00000000
+[2.105] write():  <11> Tx: $53544d3332205375636365737366756c6c7920636f6d706c65746564207265736574206f7065726174696f6e0a#59
+[2.110] read():  <11> Rx: $vFlashErase:08040000,00002000#c8
+[2.110] handleFlashPacket():  FlashErase skipped (Will be performed at flash done)
+[2.110] write():  <11> Tx: $OK#9a
+[2.110] read():  <11> Rx: $vFlashWrite:8040000:\x00\x00\x03 9\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x04\x04\x08\xff\x02\x04\x08\xff\x04\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x04\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\xff\x04\x04\x08\xff\x04\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\xff\x02\x04\x08\x00\x00\x00\x00\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\xff\x02\x04\x08\x00\x00\x00\x00\x00\x00\x00\x00#81
+[2.110] handleFlashPacket():  Flash write: Address= 0x8040000, Length=504
+[2.110] write():  <11> Tx: $OK#9a
+[2.111] read():  <11> Rx: $vFlashWrite:80401f8:\x10\xff\x05L}\x03x3\xff\x04K\x13\xff\x04H\x00\xff\x00\xff\x01}\x03}\x03p\x10\xff\x10\xff\x01 \x00\x00\x00\x00\xff\x1a\x04\x08\x08\xff\x03K\x1b\xff\x03I\x03H\x00\xff\x00\xff\x08\xff\x00\x00\x00\x00\x14\xff\x01 \xff\x1a\x04\x08\xff\xff4\xff\x00!\x03\xff\x0cK[XCP\x041\x0bH\x0cKB\x18\xffB\xff\xff\x0bJ\x02\xff\x00}\x03B\xff\x04;\x09K\xffB\xff\xff\x00\xff3\xff\x01\xff\x03\xff\x00\xff\x0f\xff\xff\xff\x00\x00\x03 `\x1b\x04\x08\x00\xff\x01 \x10\xff\x01 \x10\xff\x01 8\xff\x01 \xff\xff\x00\x00\xff\xff\x00\xff\x09I\x00 \x01\xff}\x04\xff\x08I\x01 \x01\xff \xff\x00\xff(\xff\x00\xff\x0e\xff\x00\xffh\xff\x00\xff[\xff\x03K\x01"\x1a`\xff\xff\x11\x04\x04\x08\x1d\x04\x04\x08,\xff\x01 \xff\xff\xff\xff\x00\xff\x07\xff\x18\x03H"\x00!\x18F\x01\xff\xff\xff;\x1d\x00"\x1a`Z`\xff`\xff`\x1aa\x00 \x00\xff8\xff\x03F\x00+\x01\xff\x00\xff\xff\xff\x10}\x03\xffa\x01}\x03{c\x00}\x03\xffc`}\x03\xffc\x02}\x03{d\x01}\x03\xffd\x01}\x03\xffd7}\x03;e\x07}\x03{e\x02}\x03\xffe\x02}\x03\xffe\x07\xff\x18\x03\x18F\x00\xff\xff\xff\x03F\x00+\x01\xff\x00\xffy\xff\x0f}\x03{`\x03}\x03\xff`\x00}\x03\xff`\x00}\x03;a\x00}\x03{a;\x1d\x05!\x18F\x01\xff\xff\xff\x03F\x00+\x01\xff\x00\xffe\xff\x00\xff`7\xffF\xff\xff\xff\xff\x00\xff\x00\xff\xff\xff\x03F\x00+\x01\xff\x00\xffX\xff\x00\xff\xff\xff\xff\xff\xff\xff\x00\xff;\x1d\x00"\x1a`Z`\xff`\xff`\x1aa\x10K\xffl\x0fJC\xff\x02\x03\xffd\x0dK\xffl\x03\xff\x02\x03;`;h\x00"\xff!\x0aH\x00\xffw\xff\xff}\x03{`\x01}\x03\xff`\x00}\x03\xff`\x03}\x03;a;\x1d\x19F\x04H\x00\xff\xff\xff\x00\xff\x187\xffF\xff\xff\x00\x10\x02@\x00\x04\x02B\xff\xff\x00\xff\x09K\x1bh\x00+\x05\xff\x07K\x1bh\x01;\x06J\x13`\x07\xff\xff!\x05H\x00\xffj\xff\x02KO\xff\xffr\x1a`\x00\xff\xff\xff\x00\xff\x01 \x00\x04\x02B\xff\xff\x00\xff\x00\xff\x08\xff\x00\xff\xff\xff\xff\xff\x00\xff\x00\xff\x02\xff\x00\xff\xff\xff\xff\xff\x00\xff\x05K\x1bh\x00+\x01\xff\xff\xff\xff\xff\x01"\xff!\x02H\x00\xff/\xff\xff\xff,\xff\x01 \x00\x04\x02B\xff\xff\xff\xff\x00\xff\x0fK\x1bn\x0eJC\xff\x01\x03\x13f\x0cK\x1bn\x03\xff\x01\x03{`{h\x09K\xffm\x08JC\xff\xffS\xffe\x06K\xffm\x03\xff\xffS;`;h\x00\xff\x0c7\xffF]\xff\x04{pG\x00\xff\x00\x10\x02@\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xffl\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\x00\x00\xff\xff\x00\xff\x01\xff\x06\xff\x02F\x02K\x1a`\x00\xff\xff\xff\x00\xff\x04\xff\x01 \xff\xff\xff\xff\x00\xff\x00}\x03\xffq\x04 \x00\xff\x1c\xff\xff\xff\xff\xff\x00 \x00\xff\x0d\xff\x03F\x00+\x02\xff\x01}\x03\xffq\x01\xff\xff\xff\xff\xff\xffy\x18F\x087\xffF\xff\xff\xff\xff\xff\xff\x00\xffx`\x00}\x03\xffs\x16K\x1bh\x00+"\xff\x15K\x1ah\x13K\x1bhO\xffzq\xff\xff\xff\xff\xff\xff\xff\xff\x18F\x00\xff\x18\xff\x03F\x00+\x0f\xff{h\x07+\x09\xff\x00"yhO\xff\xff0\x00\xff\xff\xff\x0aJ{h\x13`\x07\xff\x01}\x03\xffs\x04\xff\x01}\x03\xffs\x01\xff\x01}\x03\xffs\xff{\x18F\x107\xffF\xff\xff\x0c\xff\x01 \x04\xff\x01 \x08\xff\x01 \xff\xff\x00\xff\x05K\x1ah\x05K\x1bh\x13D\x03J\x13`\x00\xff\xffF]\xff\x04{pG0\xff\x01 \x0c\xff\x01 \xff\xff\x00\xff\x03K\x1bh\x18F\xffF]\xff\x04{pG\x00\xff0\xff\x01 \xff\xff\xff\xff\x00\xffx`{h\x03\xff\x07\x03\xff`\x0cK\xffh\xff`\xffhO\xff\xff\x03\x13@\xff`\xffh\x1a\x02\xffh\x13CC\xff\xffcC\xff\x003\xff`\x04J\xffh\xff`\x00\xff\x147\xffF]\xff\x04{pG\x00\xff\x00\xff\xff\xff\x00\xff\x04K\xffh\x1b\x0a\x03\xff\x07\x03\x18F\xffF]\xff\x04{pG\x00\xff\x00\xff\xff\xff\xff\xff\x00\xff\x03F9`\xffq\xff\xff\x070\x00+\x0a\xff;h\xff\xff\x0cI\xff\xff\x070R\x01\xff\xff\x0bD\xff\xff\x00}\x03\x0a\xff;h\xff\xff\x08I\xffy\x03\xff\x0f\x03\x04;R\x01\xff\xff\x0bD\x1av\x00\xff\x0c7\xffF]\xff\x04{pG\x00\xff\x00\xff\x00\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff`\xff`z`\xffh\x03\xff\x07\x03\xffa\xffi\xff\xff\x07\x03\x03+(\xff\x03}\x03\xffa\xffi\x033\x06+\x02\xff\xffi\x04;\x00\xff\x00}\x03{aO\xff\xff2\xffi\x02\xff\x03\xff\xffC\xffh\x1a@{i\xff@O\xff\xff1{i\x01\xff\x03\xff\xffC{h\x0b@\x13C\x18F}\x047\xffF]\xff\x04{pG\x00\x00\xff\xff\xff\xff\x00\xffx`{h\x01;\xff\xff\xff\x7f\x01\xff\x01}\x03\x0f\xff\x0aJ{h\x01;S`\x07!O\xff\xff0\xff\xff\xff\xff\x05K\x00"\xff`\x04K\x07"\x1a`\x00}\x03\x18F\x087\xffF\xff\xff\x00\xff\x10\xff\x00\xff\xff\xff\xff\xff\x00\xffx`xh\xff\xffG\xff\x00\xff\x087\xffF\xff\xff\xff\xff\xff\xff\x00\xff\x03F\xff`z`\xffs\xff\xff^\xffxazh\xffhxi\xff\xff\xff\xff\x02F\xff\xff\x0f0\x11F\x18F\xff\xff_\xff\x00\xff\x187\xffF\xff\xff\xff\xff\xff\xff\x00\xffx`xh\xff\xff\xff\xff\x03F\x18F\x087\xffF\xff\xff\x00\x00\xff\xff\xff\xff\x00\xffx`9`\x00}\x03{aX\xff;h\x1ah\x01!{i\x01\xff\x03\xff\x13@\xff`\xffh\x00+\x00\xffJ\xff;h[h\x01+\x0b\xff;h[h\x02+\x07\xff;h[h\x11+\x03\xff;h[h\x12+0\xff{h\xffh;a{i[\x00\x03"\x02\xff\x03\xff\xffC:i\x13@;a;h\xffh{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\xff`{h[h;a\x01"{i\x02\xff\x03\xff\xffC:i\x13@;a;h[h\x1b\x09\x03\xff\x01\x02{i\x02\xff\x03\xff:i\x13C;a{h:iZ`{h\xffh;a{i[\x00\x03"\x02\xff\x03\xff\xffC:i\x13@;a;h\xffh{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\xff`;h[h\x02+\x03\xff;h[h\x12+}\x03\xff{i\xff\x08{h\x082S\xff"0;a{i\x03\xff\x07\x03\xff\x00\x0f"\x02\xff\x03\xff\xffC:i\x13@;a;h\x1ai{i\x03\xff\x07\x03\xff\x00\x02\xff\x03\xff:i\x13C;a{i\xff\x08{h\x0829iC\xff"\x10{h\x1bh;a{i[\x00\x03"\x02\xff\x03\xff\xffC:i\x13@;a;h[h\x03\xff\x03\x02{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\x1a`;h[h\x03\xff\xffS\x00+\x00\xff\xff\xffZJ{i\xff\x08\x183R\xff}\x030;a{i\x03\xff\x03\x03\xff\x00\x0f"\x02\xff\x03\xff\xffC:i\x13@;a{hRJ\xffB%\xff{hQJ\xffB\x1f\xff{hPJ\xffB\x19\xff{hOJ\xffB\x13\xff{hNJ\xffB\x0d\xff{hMJ\xffB\x07\xff{hLJ\xffB\x01\xff\x06}\x03\x0c\xff\x07}\x03\x0a\xff\x05}\x03\x08\xff\x04}\x03\x06\xff\x03}\x03\x04\xff\x02}\x03\x02\xff\x01}\x03\x00\xff\x00}\x03zi\x02\xff\x03\x02\xff\x00\xff@:i\x13C;a8I{i\xff\x08\x183:iA\xff}\x03 4K\xff\xff\xff0;a\xffh\xffC:i\x13@;a;h[h\x03\xff\xff3\x00+\x03\xff:i\xffh\x13C;a+J;i\xff\xff\xff0)K\xff\xff\xff0;a\xffh\xffC:i\x13@;a;h[h\x03\xff\x003\x00+\x03\xff:i\xffh\x13C;a\x1fJ;i\xff\xff\xff0\x1dK\x1bh;a\xffh\xffC:i\x13@;a;h[h\x03\xff\xff\x13\x00+\x03\xff:i\xffh\x13C;a\x14J;i\x13`\x13K[h;a\xffh\xffC:i\x13@;a;h[h\x03\xff\x00\x13\x00+\x03\xff:i\xffh\x13C;a\x0aJ;iS`{i\x013{a;h\x1ah{i"\xff\x03\xff\x00+\x7f\xff\xff\xff\x00\xff\x1c7\xffF]\xff\x04{pG\x00\xff\x00\xff\x02@\x00\x00\x02B\x00\x04\x02B\x00\x08\x02B\x00\x0c\x02B\x00\x10\x02B\x00\x14\x02B\x00\x18\x02B\xff\xff\xff\xff\x00\xffx`\x0bF{\xff\x13F{p{x\x00+\x03\xffz\xff{h\xffa\x02\xffz\xff{h\xffb\x00\xff\x0c7\xffF]\xff\x04{pG\xff\xff\xff\xff\x00\xffx`\x0bF{\xff{hZi{\xff\x13@\x00+\x03\xffz\xff{h\xffb\x02\xffz\xff{h\xffa\x00\xff\x0c7\xffF]\xff\x04{pG\x00\x00\xff\xff\xff\xff\x00\xff\x00}\x03\xffq\x0bK[h\x03\xff\x01\x03\x00+\x02\xff\x01}\x03\xffq\x05\xff\x06K\x1bh\x05JC\xff\x01\x03\x13`\xffy\x18F\x0c7\xffF]\xff\x04{pG\x00\xff\x00\x04\x03@\xff\xff\x00\xff\x04K\x1bh\x03\xff\xffc\x18F\xffF]\xff\x04{pG\x00\xff\x00p\x00@\xff\xff\xff\xff\x00\xffx`'K\x1bh\x03\xff\xffc\xff`\x00\xffQ\xff\x03F\xff\xff\x00O\x01\xff\x01}\x03>\xff!K\xffh\x03\xff\x00C\xff\xff\x00O\x01\xff\x01}\x035\xff\xffh{h\xffB\x01\xff\x00}\x03/\xff\x19K\x1bh}\x03\xff\xffb\x17I{h\x13C\x0b`\x16K\x1bh[\x09\x16J\xff\xff\x03}\x03\xff\x092"\x02\xff\x03\xff\x13J\xff\xff\x03}\x03\xff\x08\x013\xff`\x02\xff\xffh\x01;\xff`\x0bK[i\x03\xff\xffc\xff\xff\xffo\x02\xff\xffh\x00+\xff\xff\x06K[i\x03\xff\xffc\xff\xff\xffo\x01\xff\x03}\x03\x00\xff\x00}\x03\x18F\x107\xffF\xff\xff\x00p\x00@\x04\xff\x01 \xffZ|\x0a\xff\xff\xff\xff\xff\xff\xff\xff\x00\xff\x0fK\x1bi;`;h\x03\xff\xffS\x00+\x03\xffO\xff\xffS{`\x0a\xff;h\x03\xff\x00C\x00+\x03\xffO\xff\x00C{`\x01\xff\x00}\x03{`{h\x18F\x0c7\xffF]\xff\x04{pG\x00\xff\x00p\x00@\xff\xff\xff\xff\x00\xffx`{h\x00+\x02\xff\x01}\x03\x00\xff\\\xff\xffK\xffh\x03\xff\x0c\x03\xffa\xffK\xffh\x03\xff\x03\x03{a{h\x1bh\x03\xff\x10\x03\x00+\x00\xff\xff\xff\xffi\x00+\x07\xff\xffi\x0c+@\xff\xff\xff{i\x01+@\xff\xff\xff\xffK\x1bh\x03\xff\x02\x03\x00+\x06\xff{h\xffi\x00+\x02\xff\x01}\x03\x00\xff3\xff{hZj\xffK\x1bh\x03\xff\x08\x03\x00+\x04\xff\xffK\x1bh\x03\xff\xff\x03\x05\xff\xffK\xff\xff\xff0\x1b\x09\x03\xff\xff\x03\xffB}\x04\xff{h[j\x18F\x00\xff\xff\xff\x03F\x00+\x02\xff\x01}\x03\x00\xff\x13\xff\xffK\x1bh\x7fJC\xff\x08\x03\x13`}]K\x1bh}\x03\xff\xff\x02{h[jzI\x13C\x0b`xK[h}\x03\xff\x7fB{h\x1bj\x1b\x02uI\x13CK`%\xffsK\x1bhrJC\xff\x08\x03\x13`pK\x1bh}\x03\xff\xff\x02{h[jmI\x13C\x0b`kK[h}\x03\xff\x7fB{h\x1bj\x1b\x02hI\x13CK`\xffi\x00+\x09\xff{h[j\x18F\x00\xff\xff\xff\x03F\x00+\x01\xff\x01}\x03\xff\xff\x00\xff\xff\xff\x01F^K\xffh\x1b\x09\x03\xff#2f
+[2.112] handleFlashPacket():  Flash write: Address= 0x80401f8, Length=2968
+[2.112] write():  <11> Tx: $OK#9a
+[2.113] read():  <11> Rx: $vFlashWrite:8040d90:\x0f\x03]J\xff\\!\xff\x03\xff\\J\x13`\x00 \xff\xff\xff\xff\x03F\xffs\xff{\x00+R\xff\xff{\xff\xff{h\xffi\x00+2\xffRK\x1bhQJC\xff\x01\x03\x13`\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xffHK\x1bh\x03\xff\x02\x03\x00+\xff\xffEK\x1bhDJC\xff\x08\x03\x13`BK\x1bh}\x03\xff\xff\x02{h[j?I\x13C\x0b`>K[h}\x03\xff\x7fB{h\x1bj\x1b\x02:I\x13CK`\x1a\xff8K\x1bh7J}\x03\xff\x01\x03\x13`\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03p\xff/K\x1bh\x03\xff\x02\x03\x00+\xff\xff\x00\xff\x00\xff{h\x1bh\x03\xff\x01\x03\x00+r\xff\xffi\x08+\x05\xff\xffi\x0c+\x0e\xff{i\x03+\x0b\xff}\x03K\x1bh\x03\xff\x003\x00+b\xff{h[h\x00+^\xff\x01}\x03M\xff{h[h\xff\xff\xff?\x06\xff\x1bK\x1bh\x1aJC\xff\xff3\x13`\x1d\xff{h[h\xff\xff\xff/\x0c\xff\x15K\x1bh\x14JC\xff\xff}\x03\x13`\x12K\x1bh\x11JC\xff\xff3\x13`\x0b\xff\x0eK\x1bh\x0dJ}\x03\xff\xff3\x13`\x0bK\x1bh\x0aJ}\x03\xff\xff}\x03\x13`{h[h\x00+\x1a\xff\xff\xffj\xff8a\x0f\xff\xff\xfff\xff\x02F;i\xff\x1ad+\x08\xff\x03}\x03\x12\xff\x00\xff\x00\x10\x02@\x00\x1b\x04\x08\x04\xff\x01 \xffK\x1bh\x03\xff\x003\x00+\xff\xff\x14\xff\xff\xffO\xff8a\x08\xff\xff\xffK\xff\x02F;i\xff\x1ad+\x01\xff\x03}\x03\xff\xff\xffK\x1bh\x03\xff\x003\x00+\xff\xff\x00\xff\x00\xff{h\x1bh\x03\xff\x02\x03\x00+`\xff\xffi\x04+\x05\xff\xffi\x0c+\x19\xff{i\x02+\x16\xff\xffK\x1bh\x03\xff\xffc\x00+\x05\xff{h\xffh\x00+\x01\xff\x01}\x03\xff\xff\xffK[h}\x03\xff\xffB{h\x1bi\x1b\x06\xffI\x13CK`@\xff{h\xffh\x00+}\x03\xff\xffK\x1bh\xffJC\xff\xffs\x13`\xff\xff\x0a\xff8a\x08\xff\xff\xff\x06\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xff~K\x1bh\x03\xff\xffc\x00+\xff\xff{K[h}\x03\xff\xffB{h\x1bi\x1b\x06wI\x13CK`\x18\xffuK\x1bhtJ}\x03\xff\xffs\x13`\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xfflK\x1bh\x03\xff\xffc\x00+\xff\xff{h\x1bh\x03\xff\x08\x03\x00+Q\xff{h[i\x00+1\xff{h\xffi\x00+\x08\xffbK\xff\xff\xff0`J}\x03\xff\x10\x03\xff\xff\xff0\x07\xff]K\xff\xff\xff0\\JC\xff\x10\x03\xff\xff\xff0YK\xff\xff\xff0XJC\xff\x01\x03\xff\xff\xff0\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x07+\x01\xff\x03}\x03T\xffOK\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff\x1b\xffKK\xff\xff\xff0IJ}\x03\xff\x01\x03\xff\xff\xff0\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x07+\x01\xff\x03}\x037\xff@K\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff{h\x1bh\x03\xff\x04\x03\x00+\x00\xff\x09\xff\x00}\x03\xffw8K\xffm\x03\xff\xffS\x00+\x0d\xff5K\xffm4JC\xff\xffS\xffe2K\xffm\x03\xff\xffS\xff`\xffh\x01}\x03\xffw/K\x1bh\x03\xff\xffs\x00+\x18\xff,K\x1bh+JC\xff\xffs\x13`\xff\xffR\xff8a\x08\xff\xff\xffN\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xff}\x03K\x1bh\x03\xff\xffs\x00+\xff\xff{h\xffh\x03\xff\x01\x03\x00+\x1f\xff{h\xffh\x03\xff\x04\x03\x00+\x10\xff\x19K\xff\xff\xff0\x17JC\xff\x04\x03\xff\xff\xff0\x15K\xff\xff\xff0\x13JC\xff\x01\x03\xff\xff\xff0\x18\xff\x10K\xff\xff\xff0\x0fJC\xff\x01\x03\xff\xff\xff0\x0f\xff\x0cK\xff\xff\xff0\x0aJ}\x03\xff\x01\x03\xff\xff\xff0\x08K\xff\xff\xff0\x06J}\x03\xff\x04\x03\xff\xff\xff0{h\xffh\x00+X\xff\xff\xff\x05\xff8a\x0f\xff\x00\xff\x00\x10\x02@\x00p\x00@\xff\xff\xff\xff\x02F;i\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x03\xff\xff\xffK\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff{h\xffh\x03\xff\xff\x03\x00+\x1b\xff\xffK\xff\xff\xff0\xffJC\xff\xff\x03\xff\xff\xff0\x0a\xff\xff\xff\xff\xff\x02F;i\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x03\xff\xff\xffK\xff\xff\xff0\x03\xff\x00c\x00+\xff\xffS\xff\xffK\xff\xff\xff0\xffJ}\x03\xff\xff\x03\xff\xff\xff0\x0a\xff\xff\xff\xff\xff\x02F;i\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x03i\xff\xffK\xff\xff\xff0\x03\xff\x00c\x00+\xff\xff7\xff\xff\xff\xff\xff8a\x0a\xff\xff\xff\xff\xff\x02F;i\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x03R\xff\xffK\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff\xffK\xff\xff\xff0\x03\xff\xff\x03\x00+\x1a\xff\xffK\xff\xff\xff0~J}\x03\xff\xff\x03\xff\xff\xff0\x0a\xff\xff\xff\xff\xff\x02F;i\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x030\xffvK\xff\xff\xff0\x03\xff\x00c\x00+\xff\xff\xff\x7f\x01+\x05\xffqK\xffmpJ}\x03\xff\xffS\xffe{h\x1bh\x03\xff \x03\x00+<\xff{h\xffj\x00+\x1c\xffiK\xff\xff\xff0gJC\xff\x01\x03\xff\xff\xff0\xff\xffY\xff8a\x08\xff\xff\xffU\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\x01\xff^K\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff\x1b\xffZK\xff\xff\xff0YJ}\x03\xff\x01\x03\xff\xff\xff0\xff\xff<\xff8a\x08\xff\xff\xff8\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xffPK\xff\xff\xff0\x03\xff\x02\x03\x00+\xff\xff{h\xffj\x00+\x00\xff\xff\xffJK\xffh\x03\xff\x0c\x03\x0c+\x00\xff\xff\xff{h\xffj\x02+Z\xffDK\x1bhCJ}\x03\xff\xffs\x13`\xff\xff\x12\xff8a\x08\xff\xff\xff\x0e\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03\xff\xff;K\x1bh\x03\xff\x00s\x00+\xff\xff8K\xffh8K\x13@zh\x11kzhRk\x01:\x12\x01\x11Czh\xffk\x12\x02\x11Czh\x12lR\x08\x01:R\x05\x11CzhRlR\x08\x01:R\x06\x11Czh\xffk\xff\x06\x0aC(I\x13C\xff`'K\x1bh&JC\xff\xffs\x13`}\x04K\xffh}\x03JC\xff\xffs\xff`\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03y\xff\x1aK\x1bh\x03\xff\x00s\x00+\xff\xffq\xff\x17K\x1bh\x16J}\x03\xff\xffs\x13`\x14K\x1bh\x03\xff S\x00+\x05\xff\x11K\xffh\x10J}\x03\xff\x03\x03\xff`\x0eK\xffh\x0dJ}\x03\xff\xffs}\x03\xff\xff3\xff`\xff\xff\xff\xff8a\x08\xff\xff\xff\xff\xff\x02F;i\xff\x1a\x02+\x01\xff\x03}\x03K\xff\x03K\x1bh\x03\xff\x00s\x00+\xff\xffC\xff\x00\xff\x00\x10\x02@\x0c\xff\xff\x01{h\xffj\x01+\x01\xff\x01}\x039\xff\x1eK\xffh{a{i\x03\xff\x03\x02{h\x1bk\xffB,\xff{i\x03\xff\xff\x02{h[k\x01;\x1b\x01\xffB}\x03\xff{i\x03\xff\xffB{h\xffk\x1b\x02\xffB\x1b\xff{i\x03\xffxB{h\xffk\xff\x06\xffB\x13\xff{i\x03\xff\xff\x02{h\x1bl[\x08\x01;[\x05\xffB\x09\xff{i\x03\xff\xffb{h[l[\x08\x01;[\x06\xffB\x01\xff\x01}\x03\x00\xff\x00}\x03\x18F 7\xffF\xff\xff\x00\x10\x02@\xff\xff\xff\xff\x00\xffx`9`\x00}\x03{a{h\x00+\x01\xff\x01}\x03\x0d\xff\xffK\x1bh\x03\xff\x0f\x03:h\xffB\x10\xff\xffK\x1bh}\x03\xff\x0f\x02\xffI;h\x13C\x0b`\xffK\x1bh\x03\xff\x0f\x03:h\xffB\x01\xff\x01}\x03\xff\xff{h\x1bh\x03\xff\x01\x03\x00+\x00\xff\xff\xff{h[h\x03+4\xffxK\x1bh\x03\xff\x00s\x00+\x01\xff\x01}\x03\xff\xff\x00\xff\xff\xff8a;isJ\xffBV\xffpK\xffh\x03\xff\xff\x03\x00+\x0a\xffmK\xffh}\x03\xff\xff\x03kJC\xff\xff\x03\xff`\xff}\x03{aE\xff{h\x1bh\x03\xff\x02\x03\x00+?\xff{h\xffh\x00+;\xffcK\xffh}\x03\xff\xff\x03aJC\xff\xff\x03\xff`\xff}\x03{a0\xff{h[h\x02+\x07\xff[K\x1bh\x03\xff\x003\x00+\x15\xff\x01}\x03\xff\xff{h[h\x00+\x07\xffUK\x1bh\x03\xff\x02\x03\x00+\x09\xff\x01}\x03\xff\xffQK\x1bh\x03\xff\xffc\x00+\x01\xff\x01}\x03\xff\xff\x00\xff\xff\xff8a;iLJ\xffB\x09\xffJK\xffh}\x03\xff\xff\x03HJC\xff\xff\x03\xff`\xff}\x03{aEK\xffh}\x03\xff\x03\x02{h[hBI\x13C\xff`\xff\xff\xff\xff\xff`\x0a\xff\xff\xff\xff\xff\x02F\xffh\xff\x1aA\xff\xff2\xffB\x01\xff\x03}\x03l\xff9K\xffh\x03\xff\x0c\x02{h[h\xff\x00\xffB\xff\xff{h\x1bh\x03\xff\x02\x03\x00+\x09\xff1K\xffh}\x03\xff\xff\x02{h\xffh.I\x13C\xff`\x08\xff{i\xff+\x05\xff+K\xffh}\x0aJ}\x03\xff\xff\x03\xff`'K\x1bh\x03\xff\x0f\x03:h\xffB\x10\xff}\x03K\x1bh}\x03\xff\x0f\x02!I;h\x13C\x0b`\x1fK\x1bh\x03\xff\x0f\x03:h\xffB\x01\xff\x01}\x032\xff{h\x1bh\x03\xff\x04\x03\x00+\x08\xff\x19K\xffh}\x03\xff\xffb{h\xffh\x16I\x13C\xff`{h\x1bh\x03\xff\x08\x03\x00+\x09\xff\x11K\xffh}\x03\xff`R{h\x1bi\xff\x00\x0eI\x13C\xff`\x00\xff \xff\x01F\x0bK\xffh\x1b\x09\x03\xff\x0f\x03\x0aJ\xff\\!\xff\x03\xff\x09J\x13`\x00 \xff\xff\xff\xff\x03F\xffr\xffz\x18F\x187\xffF\xff\xff\x00 \x02@\x00\x10\x02@\x00\xff\xff\x04\x00\x1b\x04\x08\x04\xff\x01 \xff\xff\xff\xff\x00\xff\x00}\x03\xffa\x00}\x03\xffaFK\xffh\x03\xff\x0c\x03;aCK\xffh\x03\xff\x03\x03\xff`;i\x00+\x05\xff;i\x0c+!\xff\xffh\x01+\x1e\xff<K\x1bh\x03\xff\x08\x03\x00+\x07\xff9K\xff\xff\xff0\x1b\x0a\x03\xff\x0f\x03\xffa\x05\xff5K\x1bh\x1b\x09\x03\xff\x0f\x03\xffa3J\xffiR\xff}\x030\xffa;i\x00+\x0d\xff\xffi\xffa\x0a\xff;i\x04+\x02\xff-K\xffa\x04\xff;i\x08+\x01\xff}\x0aK\xffa;i\x0c+E\xff&K\xffh\x03\xff\x03\x03\xff`}\x03K\xffh\x1b\x09\x03\xff\x0f\x03\x013{`\xffh\x02+\x02\xff\x03+\x0d\xff\x19\xff\x1fJ{h\xff\xff\xff\xff\x1bJ\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff{a\x19\xff\x18J{h\xff\xff\xff\xff\x14J\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff{a\x0c\xff\xffi{h\xff\xff\xff\xff\x0eJ\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff{a\x00\xff\x09K\xffh[\x0e\x03\xff\x03\x03\x013[\x00;`zi;h\xff\xff\xff\xff\xffa\xffi\x18F}\x047\xffF]\xff\x04{pG\x00\x10\x02@\x10\x1b\x04\x08\x00}\x04\xff\x00\xff\xff\xff\xff\x00\xffx`\x00}\x03{a,K\xffm\x03\xff\xffS\x00+\x03\xff\xff\xff6\xff8a\x14\xff'K\xffm&JC\xff\xffS\xffe}\x04K\xffm\x03\xff\xffS\xff`\xffh\xff\xff&\xff8a K\xffm\x1fJ}\x03\xff\xffS\xffe;i\x00+\x03\xff;i\xff\xff\x00\x7f\x0b\xff#ab
+[2.113] handleFlashPacket():  Flash write: Address= 0x8040d90, Length=2944
+[2.113] write():  <11> Tx: $OK#9a
+[2.114] read():  <11> Rx: $vFlashWrite:8041910:{h\xff+\x19\xff{h\xff+\x02\xff\x02}\x03{a\x13\xff\x01}\x03{a\x10\xff{h\xff+\x02\xff\x03}\x03{a\x0a\xff{h\xff+\x02\xff\x02}\x03{a\x04\xff{hp+\x01\xff\x01}\x03{a\x0cK\x1bh}\x03\xff\x0f\x02\x0aI{i\x13C\x0b`\x08K\x1bh\x03\xff\x0f\x03zi\xffB\x01\xff\x01}\x03\x00\xff\x00}\x03\x18F\x187\xffF\xff\xff\x00\xff\x00\x10\x02@\x00 \x02@\xff\xff\xff\xff\x00\xff\x00}\x03{a6K\xffh\x03\xff\x03\x03\x01+\x18\xff3K\x1bh\x03\xff\x08\x03\x00+\x07\xff0K\xff\xff\xff0\x1b\x0a\x03\xff\x0f\x03{a\x05\xff,K\x1bh\x1b\x09\x03\xff\x0f\x03{a}\x0aJ{iR\xff}\x030{a&K\xffh\x03\xff\x03\x03\xff`}\x04K\xffh\x1b\x09\x03\xff\x0f\x03\x013\xff`\xffh\x02+\x02\xff\x03+\x0d\xff\x19\xff\x1fJ\xffh\xff\xff\xff\xff\x1bJ\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff;a\x19\xff\x19J\xffh\xff\xff\xff\xff\x15J\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff;a\x0c\xffzi\xffh\xff\xff\xff\xff\x0eJ\xffh\x12\x0a\x02\xff\x7f\x02\x02\xff\x03\xff;a\x00\xff\x0aK\xffh[\x0e\x03\xff\x03\x03\x013[\x00{`:i{h\xff\xff\xff\xff;`;h\x18F\x1c7\xffF]\xff\x04{pG\x00\xff\x00\x10\x02@\x10\x1b\x04\x08\x00}\x04\xff\x00p\xff\x0dN\x00%\x0dL\xff\x1b\xff\x10\xffB\x09\xff\x0bN\x00%\x0bL\x00\xff\x1f\xff\xff\x1b\xff\x10\xffB\x05\xffp\xffV\xff%0\x015\xffG\xff\xffV\xff%0\x015\xffG\xff\xffP\x1b\x04\x08P\x1b\x04\x08P\x1b\x04\x08T\x1b\x04\x08\x02D\x03F\xffB\x00\xffpG\x03\xff\x01\x1b\xff\xff\xff\xff\x00\xff\xff\xff\x08\xff\xffFpG\xff\xff\x00\xff\xff\xff\x08\xff\xffFpG\x01\xff\x02H\xffF\x01\xff`G\x00\xff\x09\xff\x03\x0c\x01\xff\x02H\xffF\x01\xff`G\x00\xff\x01\xff\x03\x0c#0a
+[2.114] handleFlashPacket():  Flash write: Address= 0x8041910, Length=496
+[2.114] write():  <11> Tx: $OK#9a
+[2.114] read():  <11> Rx: $vFlashWrite:8041b00:\x00\x00\x00\x00\x00\x00\x00\x00\x01\x02\x03\x04\x06\x07\x08\x09\xff\xff\x01\x00@\x0d\x03\x00\xff\x1a\x06\x00\x005\x0c\x00@B\x0f\x00\xff\xff\x1e\x00\x00\x09=\x00\x00\x12z\x00\x00}\x04\xff\x00\x006n\x01\x00H\xff\x01\x00l\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00#0c
+[2.114] handleFlashPacket():  Flash write: Address= 0x8041b00, Length=80
+[2.114] write():  <11> Tx: $OK#9a
+[2.114] read():  <11> Rx: $vFlashWrite:8041b50:\x1d\x02\x04\x08\x00\x00\x00\x00#a2
+[2.114] handleFlashPacket():  Flash write: Address= 0x8041b50, Length=8
+[2.114] write():  <11> Tx: $OK#9a
+[2.114] read():  <11> Rx: $vFlashWrite:8041b58:\xff\x01\x04\x08\x00\x00\x00\x00#85
+[2.114] handleFlashPacket():  Flash write: Address= 0x8041b58, Length=8
+[2.114] write():  <11> Tx: $OK#9a
+[2.115] read():  <11> Rx: $vFlashWrite:8041b60:\xff\x01\x00\x00\x00\x09=\x00\x08\x00\x00\x00\x01\x00\x00\x00#bc
+[2.115] handleFlashPacket():  Flash write: Address= 0x8041b60, Length=16
+[2.115] write():  <11> Tx: $OK#9a
+[2.115] read():  <11> Rx: $vFlashDone#ea
+[2.115] handleFlashPacket():  Writing to /tmp/ST-LINK_GDB_server_6WXLup.srec
+[2.121] spawnCubeProgrammer():   ------ Switching to STM32CubeProgrammer ----- 
+[2.121] file_utils_spawn():  Spawning /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin/STM32_Programmer_CLI --connect port=SWD mode=UR reset=hwRst --download /tmp/ST-LINK_GDB_server_6WXLup.srec --verify --log /tmp/STM32CubeProgrammer_wZO7aH.log
+[3.402] file_utils_spawn():  Return code 0
+[3.403] spawnCubeProgrammer():  20:00:15:162       -------------------------------------------------------------------
+[3.403] spawnCubeProgrammer():  20:00:15:163                        STM32CubeProgrammer v2.4.0                  
+[3.403] spawnCubeProgrammer():  20:00:15:163       -------------------------------------------------------------------
+[3.403] spawnCubeProgrammer():  
+[3.403] spawnCubeProgrammer():  20:00:15:163 
+[3.403] spawnCubeProgrammer():  
+[3.403] spawnCubeProgrammer():  20:00:15:163 Log output file:   /tmp/STM32CubeProgrammer_wZO7aH.log
+[3.403] spawnCubeProgrammer():  20:00:15:169 STLinkUSBDriver.dll loaded
+[3.403] spawnCubeProgrammer():  20:00:15:171 STLinkUSBDriver.dll loaded
+[3.403] spawnCubeProgrammer():  20:00:15:172 STLinkUSBDriver.dll loaded
+[3.403] spawnCubeProgrammer():  20:00:15:172 ST-LINK SN  : 066BFF353638425043085442
+[3.403] spawnCubeProgrammer():  20:00:15:172 ST-LINK FW  : V2J36M26
+[3.403] spawnCubeProgrammer():  20:00:15:172 Voltage     : 3.25V
+[3.403] spawnCubeProgrammer():  20:00:15:182 SWD freq    : 4000 KHz
+[3.403] spawnCubeProgrammer():  20:00:15:182 Connect mode: Under Reset
+[3.403] spawnCubeProgrammer():  20:00:15:182 Reset mode  : Hardware reset
+[3.403] spawnCubeProgrammer():  20:00:15:351 Device ID   : 0x472
+[3.403] spawnCubeProgrammer():  20:00:15:679 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:680 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:680 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:680 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:681 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:681 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:681 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:682 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:682 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:683 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:683 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:683 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:683 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:684 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:684 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:685 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:685 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:685 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:686 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:686 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:686 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:687 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:687 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:687 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:688 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:688 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:688 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:689 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:689 Database: Config 1 is active.
+[3.403] spawnCubeProgrammer():  20:00:15:690 flash loader /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin/FlashLoader/0x472.stldr is loaded
+[3.403] spawnCubeProgrammer():  20:00:15:690 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:691 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:691 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:692 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:692 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:692 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:692 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:693 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:694 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:694 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:694 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:695 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:695 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:696 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:696 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:697 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:697 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:697 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:697 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:698 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:698 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:699 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:699 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:700 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:700 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:701 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:701 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:702 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:702 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:703 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:703 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:703 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:703 Database: Config 1 is active.
+[3.403] spawnCubeProgrammer():  20:00:15:703 Device name : STM32L5xx
+[3.403] spawnCubeProgrammer():  20:00:15:703 Reading data...
+[3.403] spawnCubeProgrammer():  20:00:15:704 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:705 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:706 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:706 Flash size  : 512 KBytes
+[3.403] spawnCubeProgrammer():  20:00:15:706 Device type : MCU
+[3.403] spawnCubeProgrammer():  20:00:15:706 Device CPU  : Cortex-M33
+[3.403] spawnCubeProgrammer():  20:00:15:706 
+[3.403] spawnCubeProgrammer():  20:00:15:706 
+[3.403] spawnCubeProgrammer():  
+[3.403] spawnCubeProgrammer():  20:00:15:707 Memory Programming ...
+[3.403] spawnCubeProgrammer():  20:00:15:707 Opening and parsing file: ST-LINK_GDB_server_6WXLup.srec
+[3.403] spawnCubeProgrammer():  20:00:15:708   File          : ST-LINK_GDB_server_6WXLup.srec
+[3.403] spawnCubeProgrammer():  20:00:15:708   Size          : 7024 Bytes
+[3.403] spawnCubeProgrammer():  20:00:15:708   Address       : 0x08040000 
+[3.403] spawnCubeProgrammer():  20:00:15:708 
+[3.403] spawnCubeProgrammer():  
+[3.403] spawnCubeProgrammer():  20:00:15:708 Erasing Segment <0> Address <0x08040000> Size <7024>Bytes
+[3.403] spawnCubeProgrammer():  20:00:15:708 Erasing memory corresponding to segment 0:
+[3.403] spawnCubeProgrammer():  20:00:15:883 Memory erase...
+[3.403] spawnCubeProgrammer():  20:00:15:883 Erasing internal memory sectors [128 131]
+[3.403] spawnCubeProgrammer():  20:00:15:884 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:885 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:885 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:886 r ap 0 @0x40007000 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:886 w ap 0 @0x40007000 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:887 r ap 0 @0x40007000 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:887 w ap 0 @0x40007000 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:888 r ap 0 @0x40030400 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:888 w ap 0 @0x40030400 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:889 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:889 w ap 0 @0x40022008 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:889 w ap 0 @0x40022008 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:890 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:891 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:891 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:892 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:892 w ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:893 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:893 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:893 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:894 r ap 0 @0x40022040 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:894 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:895 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:895 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:896 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:896 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:897 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:897 r ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:897 w ap 0 @0x40022028 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:898 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:898 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:899 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:899 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:899 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:900 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:900 r ap 0 @0x40022020 0x00000004 bytes
+[3.403] spawnCubeProgrammer():  20:00:15:901 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:901 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:901 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:902 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:902 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:902 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:903 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:903 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:904 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:904 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:905 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:905 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:905 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:906 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:906 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:907 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:907 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:908 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:908 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:909 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:909 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:910 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:910 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:910 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:911 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:911 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:912 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:912 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:912 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:913 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:913 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:914 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:914 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:914 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:915 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:915 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:916 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:916 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:917 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:917 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:917 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:918 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:918 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:919 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:919 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:920 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:920 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:921 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:921 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:922 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:922 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:923 r ap 0 @0x40022040 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:923 r ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:924 w ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:924 r ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:925 w ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:925 r ap 0 @0x40030400 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:926 w ap 0 @0x40030400 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:926 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:926 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:927 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:928 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:928 w ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:929 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:929 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:930 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:930 r ap 0 @0x40022040 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:931 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:931 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:931 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:932 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:932 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:932 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:933 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:933 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:934 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:934 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:934 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:935 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:935 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:936 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:937 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:937 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:937 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:938 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:939 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:940 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:940 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:941 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:942 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:942 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:943 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:943 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:944 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:944 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:945 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:946 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:946 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:947 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:948 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:949 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:949 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:950 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:950 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:950 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:951 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:951 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:952 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:952 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:952 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:953 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:953 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:954 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:954 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:954 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:955 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:955 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:955 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:956 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:956 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:957 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:958 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:959 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:959 r ap 0 @0x40022040 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:960 r ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:960 w ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:961 r ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:961 w ap 0 @0x40007000 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:961 r ap 0 @0x40030400 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:962 w ap 0 @0x40030400 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:962 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:963 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:963 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:964 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:964 w ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:965 r ap 0 @0x40022020 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:965 r ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:965 w ap 0 @0x40022028 0x00000004 bytes
+[3.404] spawnCubeProgrammer():  20:00:15:966 r ap 0 @0x40022040 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:966 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:967 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:967 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:967 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:968 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:968 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:969 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:969 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:969 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:970 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:970 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:971 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:971 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:971 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:972 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:972 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:973 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:973 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:974 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:974 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:975 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:976 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:976 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:977 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:977 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:978 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:978 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:978 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:979 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:979 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:980 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:980 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:980 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:981 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:981 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:982 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:982 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:982 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:983 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:983 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:984 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:984 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:984 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:985 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:986 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:986 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:987 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:987 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:988 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:988 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:988 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:989 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:989 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:990 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:990 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:990 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:991 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:991 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:992 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:992 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:993 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:993 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:994 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:994 r ap 0 @0x40022040 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:994 r ap 0 @0x40007000 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:995 w ap 0 @0x40007000 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:995 r ap 0 @0x40007000 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:996 w ap 0 @0x40007000 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:996 r ap 0 @0x40030400 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:997 w ap 0 @0x40030400 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:997 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:998 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:998 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:998 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:999 w ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:15:999 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:000 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:000 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:000 r ap 0 @0x40022040 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:001 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:001 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:002 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:002 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:002 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:003 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:003 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:003 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:004 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:004 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:005 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:005 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:005 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:006 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:006 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:007 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:007 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:008 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:009 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:009 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:010 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:010 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:011 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:012 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:012 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:013 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:013 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:014 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:015 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:016 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:016 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:017 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:017 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:018 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:018 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:018 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:019 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:019 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:020 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:020 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:020 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:021 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:021 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:022 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:022 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:022 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:023 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:023 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:024 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:024 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:025 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:025 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:026 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:026 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:027 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:027 r ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:027 w ap 0 @0x40022028 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:028 r ap 0 @0x40022020 0x00000004 bytes
+[3.405] spawnCubeProgrammer():  20:00:16:028 erase: 0320ms
+[3.405] spawnCubeProgrammer():  20:00:16:028 Download in Progress:
+[3.405] spawnCubeProgrammer():  20:00:16:028   Size          : 7024 Bytes
+[3.406] spawnCubeProgrammer():  20:00:16:028   Address       : 0x08040000 
+[3.406] spawnCubeProgrammer():  20:00:16:028 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():  20:00:16:028 Buffer program...
+[3.406] spawnCubeProgrammer():  20:00:16:186 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:187 r ap 0 @0x40007000 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:188 w ap 0 @0x40007000 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:188 r ap 0 @0x40007000 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:188 w ap 0 @0x40007000 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:189 r ap 0 @0x40030400 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:189 w ap 0 @0x40030400 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:190 r ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:190 r ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:190 w ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:191 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:191 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:192 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:192 r ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:193 w ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:209 w ap 0 @0x08040000 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:210 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:211 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:212 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:213 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:229 w ap 0 @0x08040400 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:230 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:231 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:232 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:232 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:248 w ap 0 @0x08040800 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:249 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:250 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:251 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:251 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:267 w ap 0 @0x08040C00 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:268 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:268 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:269 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:270 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:286 w ap 0 @0x08041000 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:287 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:288 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:288 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:289 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:305 w ap 0 @0x08041400 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:306 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:308 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:309 r ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:310 w ap 0 @0x40022020 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:325 w ap 0 @0x08041800 0x00000370 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:327 r ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:329 w ap 0 @0x40022028 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:329 Segment[0] downloaded successfully
+[3.406] spawnCubeProgrammer():  20:00:16:329 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():  20:00:16:329 File download complete
+[3.406] spawnCubeProgrammer():  20:00:16:329 Time elapsed during download operation: 00:00:00.621
+[3.406] spawnCubeProgrammer():  20:00:16:330 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():  20:00:16:330 
+[3.406] spawnCubeProgrammer():  Verifying ...
+[3.406] spawnCubeProgrammer():  20:00:16:330 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():  20:00:16:330 Read progress:
+[3.406] spawnCubeProgrammer():  20:00:16:330 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:331 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:332 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:339 r ap 0 @0x08040000 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:340 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:340 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:348 r ap 0 @0x08040400 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:348 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:348 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:356 r ap 0 @0x08040800 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:356 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:357 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:364 r ap 0 @0x08040C00 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:365 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:365 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:373 r ap 0 @0x08041000 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:373 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:374 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:381 r ap 0 @0x08041400 0x00000400 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:382 Reading data...
+[3.406] spawnCubeProgrammer():  20:00:16:382 r ap 0 @0x40022040 0x00000004 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:389 r ap 0 @0x08041800 0x00000370 bytes
+[3.406] spawnCubeProgrammer():  20:00:16:389 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():  20:00:16:389 Download verified successfully 
+[3.406] spawnCubeProgrammer():  20:00:16:389 
+[3.406] spawnCubeProgrammer():  
+[3.406] spawnCubeProgrammer():   ------ Switching context ----- 
+[3.409] Device_Initialise():  Target connection mode: Under reset
+[3.421] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[3.427] Device_Initialise():  COM frequency = 4000 kHz
+[3.428] Device_Initialise():  ST-LINK Firmware version : V2J36M26
+[3.428] Device_Initialise():  Device ID: 0x472
+[3.428] Device_Initialise():  PC: 0xfffffffe
+[3.429] Device_Initialise():  ST-LINK detects target voltage = 3.25 V
+[3.429] Device_Initialise():  TrustZone: Inactive
+[3.433] Device_Initialise():  ST-LINK device status: HALT_MODE
+[3.433] initServerContext():  ST-LINK device initialization OK
+[3.434] write():  <11> Tx: $OK#9a
+[3.434] read():  <11> Rx: $Pf=38020408#8c
+[3.434] write():  <11> Tx: $OK#9a
+[3.435] read():  <11> Rx: $vFlashErase:0c000000,00001800#f6
+[3.435] handleFlashPacket():  FlashErase skipped (Will be performed at flash done)
+[3.435] write():  <11> Tx: $OK#9a
+[3.435] read():  <11> Rx: $vFlashErase:0c03e000,00000800#2d
+[3.435] handleFlashPacket():  FlashErase skipped (Will be performed at flash done)
+[3.435] write():  <11> Tx: $OK#9a
+[3.436] read():  <11> Rx: $vFlashWrite:c000000:\x00\xff\x010\x01\x0a\x00\x0c\xff\x06\x00\x0c\xff\x06\x00\x0c\xff\x06\x00\x0c\xff\x06\x00\x0c\xff\x06\x00\x0c\xff\x06\x00\x0c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x06\x00\x0c\xff\x06\x00\x0c\x00\x00\x00\x00\xff\x06\x00\x0c\xff\x06\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0c\x00\x00\x00\x00Q\x0a\x00\x0c\x00\x00\x00\x00Q\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0c\x00\x00\x00\x00Q\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0c\x00\x00\x00\x00Q\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0cQ\x0a\x00\x0c\x00\x00\x00\x00\x00\x00\x00\x00#12
+[3.436] handleFlashPacket():  Flash write: Address= 0xc000000, Length=504
+[3.436] write():  <11> Tx: $OK#9a
+[3.436] read():  <11> Rx: $vFlashWrite:c0001f8:\x10\xff\x05L}\x03x3\xff\x04K\x13\xff\x04H\x00\xff\x00\xff\x01}\x03}\x03p\x10\xff\x10\x00\x000\x00\x00\x00\x00<\x12\x00\x0c\x08\xff\x03K\x1b\xff\x03I\x03H\x00\xff\x00\xff\x08\xff\x00\x00\x00\x00\x14\x00\x000<\x12\x00\x0c-\xff\xffO'F\xffF\xffF\xffF\xffF\xffF-\xff\x10\xffO\xff\x00\x05E\xff\x18[E\xff\x19ZE\xff\x1aZE\xff\x1bZE\xff\x1cZE\xff\x1dZE\xff\x1eZE\xff\x1fZ\xff\xff\x10ZO\xff`v\xff\xff\xffv5@\xff\xff\x10Z\xff\xff\x00\xff%F&F\xffG\xff\xff\x10\xff\xff\xff\xff\xff\xff\xff\x00\xff\x00\xff\xff\xff\x00\xffL\xff\x00\xff\xff\xff\x00\xff\x02\xff\xff\xff\x00\x00\xff\xff\xff\xff\x00\xff\x1dK\x1dJ\xff`\x1cK\x1bh;`;h\xff\xff\xff\xff\x1aK\x1bh{`{h\x1cFd\x08d\x00 F!F"F}\x03F\xff\xff\x16\x0a\xff\xff\x15\x0a\xff\xff\x14\x1a\xff\xff\x13\x1a\xff\xff\x12}\x0a\xff\xff\x11}\x0a\xff\xff\x10:\xff\xff\x0f:\xff\xff\x0eJ\xff\xff\x0dJ\xff\xff\x0cZ\xff\xff\x0bZ\xff\xff\x0aj\xff\xff\x09j\xff\xff\x08z\xff\xff\x07z\xff\xff\xff\xff\x00\xff\x0c7\xffF\xff\xff\x00\xff\x00\xff\x02\xff\x00\x00\x04\x08\x04\x00\x04\x08\x00\x00\x00\x00\xff\xff\xff\xff\x00\xff\x07\xffl\x03l"\x00!\x18F\x00\xffp\xff;Fl"\x00!\x18F\x00\xffj\xff\x00}\x03\xfff\x00}\x03;gO\xff\xff3{gO\xff\xff3\xffgO\xff\xff3\xffgO\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0O\xff\xff3\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x00}\x03\xff\xff\xff0\x07\xffl\x03\x19FO\xff@P\x00\xffS\xff\x03F\x00+\x01\xff\x00\xffl\xff\x00}\x03;`\x00}\x03{`\x00}\x03\xff`\x00}\x03\xff`\x00}\x03;a\x00}\x03{a\x00}\x03\xffa\x00}\x03\xffa\x00}\x03;b\x00}\x03{b\x00}\x03\xfff;F\x19F\x05H\x00\xff3\xff\x03F\x00+\x01\xff\x00\xffL\xff\x00\xff\xff7\xffF\xff\xff\x00\x00\x030\xff\xff\xff\xff\x00\xff\x07\xff\x0c\x03\x00"\x1a`Z`\xff`\xff`\x1aa\x1aK\xffl\x19JC\xff\x04\x03\xffd\x17K\xffl\x03\xff\x04\x03\xff`\xffh\x14K\xffl\x13JC\xff\x02\x03\xffd\x11K\xffl\x03\xff\x02\x03{`{h\x00"\xff!\x0eH\x00\xff\xff\xff\x00"O\xff\x00Q\x0cH\x00\xff\xff\xff\xff}\x03\xff`\x01}\x03;a\x00}\x03{a\x00}\x03\xffa\x07\xff\x0c\x03\x19F\x04H\x00\xff\x02\xff\x00\xff 7\xffF\xff\xff\x00\x10\x02P\x00\x04\x02R\x00\x08\x02R\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\x00\x00\xff\xff\xff\xff\x00\xff\x03F9`\xffq;h\x00+\x0d\xff\xffy\x00+\x02\xff\x01+\x04\xff\x08\xff!J;h\x13`\x04\xff J;h\x13`\x00\xff\x00\xff\x00\xff\x0c7\xffF]\xff\x04{pFqFrFsF\xff\xff\x00\x0a\xff\xff\x00\x0a\xff\xff\x00\x1a\xff\xff\x00\x1a\xff\xff\x00}\x0a\xff\xff\x00}\x0a\xff\xff\x00:\xff\xff\x00:\xff\xff\x00J\xff\xff\x00J\xff\xff\x00Z\xff\xff\x00Z\xff\xff\x00j\xff\xff\x00j\xff\xff\x00z\xff\xff\x00z\xff\xff\x00\xff\x10\xff\xff\xff\x10\xffO\xff`t\xff\xff\xfft\x0c\xff\x04\x0c\xff\xff\x10\xff\x10\xff\xffFtG\x00\xff,\x00\x0000\x00\x000\xff\xff\x00\xff\xff!\x1dH\x00\xff,\xff\x00\xff\xffF\xff\xff\xff@pFqFrFsF\xff\xff\x00\x0a\xff\xff\x00\x0a\xff\xff\x00\x1a\xff\xff\x00\x1a\xff\xff\x00}\x0a\xff\xff\x00}\x0a\xff\xff\x00:\xff\xff\x00:\xff\xff\x00J\xff\xff\x00J\xff\xff\x00Z\xff\xff\x00Z\xff\xff\x00j\xff\xff\x00j\xff\xff\x00z\xff\xff\x00z\xff\xff\x00\xff\x10\xff\xff\xff\x10\xffO\xff`t\xff\xff\xfft\x0c\xff\x04\x0c\xff\xff\x10\xff\x10\xff\xffFtG\x00\x04\x02R\xff\xff\xff\xff\x00\xff\x15K\x1bn\x14JC\xff\x01\x03\x13f\x12K\x1bn\x03\xff\x01\x03\xff`\xffh\x0fK\xffm\x0eJC\xff\xffS\xffe\x0cK\xffm\x03\xff\xffS\xff`\xffh\x09K\xffl\x08JC\xff\xff\x03\xffd\x06K\xffl\x03\xff\xff\x03{`{h\x00\xff\xff\xff\x00\xff\x107\xffF\xff\xff\x00\xff\x00\x10\x02P\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xff\x05\xff\x00\xff\xff\xff\x00\x00\xff\xff\x00\xff/K\x00"\xff`.K.J\xff`,K.J\x1aa+K\x01"\xff`)K,J\xff`(K+J\x1aa&K\x02"\xff`%K)J\xff`}\x03K)J\x1aa"K\x03"\xff` KO\xff\xffB\xff`\x1eK%J\x1aa\x1dK\x04"\xff`\x1bKO\xff\xffB\xff`\x19K!J\x1aa\x18K\x05"\xff`\x16K\x1fJ\xff`\x15K\x1eJ\x1aa\x13K\x01"\x1a`\x1dK\xff\xff\xff0\x1bJC\xff@c\xff\xff\xff0\x1aK[h}\x03\xff\xffS\x18JC\xff\xffSS`\x17K\x00"\xff\xff\xff"\x15K\x00"\xff\xff\xff"\x13K\x00"\xff\xff\xff"\x11K\x00"\xff\xff\xff"\x00\xff\xffF]\xff\x04{pG\xff\xff\x00\xff\x00\xff\x03\x0c\xff\xff\x03\x0c\x00\x00\x04\x08\xff\xff\x07\x08\x00\xff\x01 \xff\xff\x03 \xff\xff\xffO\xff\xff\xff\xff\x00\x00\xff\x0b\xff\xff\xff\x0b\x00\xff\x00\xff0\xff\x00\xff\x00\xff\x00\xff\xff\xff\x00\xff\xff\xff~\xff\x08K\xff\xff\xff0\x07JC\xffp\x03\xff\xff\xff0\x05K\xff\xff\xff0\x04JC\xffp\x03\xff\xff\xff0\x00\xff\xff\xff\x00\xff\x00\xff\x00\xff\x02\xff\xff\xff\xff\xff\x00\xffOK\x1bh\x03\xff\x08\x03\x00+\x07\xffLK\xff\xff\xff0\x1b\x0a\x03\xff\x0f\x03{a\x05\xffHK\x1bh\x1b\x09\x03\xff\x0f\x03{aFJ{iR\xff}\x030{aBK\xffh\x03\xff\x0c\x03\x0c+e\xff\x01\xffR\xff}\x03\xff\x00\xff\xff\x08\x00\x0c9\x09\x00\x0c9\x09\x00\x0c9\x09\x00\x0c\xff\x08\x00\x0c9\x09\x00\x0c9\x09\x00\x0c9\x09\x00\x0c\xff\x08\x00\x0c9\x09\x00\x0c9\x09\x00\x0c9\x09\x00\x0c\xff\x08\x00\x0c2J{i\x13`G\xff0K1J\x1a`C\xff.K/J\x1a`?\xff}\x0aK\xffh\x03\xff\x03\x03\xff`(K\xffh\x1b\x09\x03\xff\x0f\x03\x013\xff`\xffh\x02+\x02\xff\x03+\x06\xff\x0b\xff}\x04J\xffh\xff\xff\xff\xff;a\x0b\xff!J\xffh\xff\xff\xff\xff;a\x05\xffzi\xffh\xff\xff\xff\xff;a\x00\xff\x18K\xffh\x1b\x0a\x03\xff\x7f\x02;i\x02\xff\x03\xff;a\x14K\xffh[\x0e\x03\xff\x03\x03\x013[\x00{`:i{h\xff\xff\xff\xff\x10J\x13`\x03\xff\x0eJ{i\x13`\x00\xff\x0aK\xffh\x1b\x09\x03\xff\x0f\x03\x0cJ\xff\\;`\x08K\x1ah;h"\xff\x03\xff\x06J\x13`\x00\xff\x1c7\xffF]\xff\x04{pG\x00\xff\x00\x10\x02Ph\x12\x00\x0c\x00\x00\x000\x00}\x04\xff\x00X\x12\x00\x0c\xff\xff\x00\xff\xff\xffP\xff\x1cK\x1bh\x18F\xffF\xff\xff\xff@qFrFsF\xff\xff\x00\x0a\xff\xff\x00\x0a\xff\xff\x00\x1a\xff\xff\x00\x1a\xff\xff\x00}\x0a\xff\xff\x00}\x0a\xff\xff\x00:\xff\xff\x00:\xff\xff\x00J\xff\xff\x00J\xff\xff\x00Z\xff\xff\x00Z\xff\xff\x00j\xff\xff\x00j\xff\xff\x00z\xff\xff\x00z\xff\xff\x00\xff\x10\xff\xff\xff\x10\xffO\xff`t\xff\xff\xfft\x0c\xff\x04\x0c\xff\xff\x10\xff\x10\xff\xffFtG\x00\xff\x00\x00\x000\xff\xff4\xff\x00!\x03\xff\x0cK[XCP\x041\x0bH\x0cKB\x18\xffB\xff\xff\x0bJ\x02\xff\x00}\x03B\xff\x04;\x09K\xffB\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff/\xff\xff\xff\x00\xff\x010\xff\x12\x00\x0c\x00\x00\x000\x10\x00\x000\x10\x00\x0008\x00\x000\xff\xff\xff\xff\xff\xff\x00\xff\x00}\x03\xffq\x04 \x00\xff\x11\xff\xff\xff\xff\xff\x00 \x00\xff\x0e\xff\x03F\x00+\x02\xff\x01}\x03\xffq\x01\xff\xff\xff\xff\xff\xffy\x18F\x087\xffF\xff\xff\x00\x00\xff\xff\xff\xff\x00\xffx`\x00}\x03\xffs\x16K\x1bh\x00+"\xff\x15K\x1ah\x13K\x1bhO\xffzq\xff\xff\xff\xff\xff\xff\xff\xff\x18F\x00\xff\x0c\xff\x03F\x00+\x0f\xff{h\x07+\x09\xff\x00"yhO\xff\xff0\x00\xff\xff\xff\x0aJ{h\x13`\x07\xff\x01}\x03\xffs\x04\xff\x01}\x03\xffs\x01\xff\x01}\x03\xffs\xff{\x18F\x107\xffF\xff\xff\x08\x00\x000\x00\x00\x000\x04\x00\x000\xff\xff\x00\xff\x05K\x1ah\x05K\x1bh\x13D\x03J\x13`\x00\xff\xffF]\xff\x04{pG4\x00\x000\x08\x00\x000\xff\xff\xff\xff\x00\xffx`{h\x03\xff\x07\x03\xff`\x0cK\xffh\xff`\xffhO\xff\xff\x03\x13@\xff`\xffh\x1a\x02\xffh\x13CC\xff\xffcC\xff\x003\xff`\x04J\xffh\xff`\x00\xff\x147\xffF]\xff\x04{pG\x00\xff\x00\xff\xff\xff\x00\xff\x04K\xffh\x1b\x0a\x03\xff\x07\x03\x18F\xffF]\xff\x04{pG\x00\xff\x00\xff\xff\xff\xff\xff\x00\xff\x03F9`\xffq\xff\xff\x070\x00+\x0a\xff;h\xff\xff\x0cI\xff\xff\x070R\x01\xff\xff\x0bD\xff\xff\x00}\x03\x0a\xff;h\xff\xff\x08I\xffy\x03\xff\x0f\x03\x04;R\x01\xff\xff\x0bD\x1av\x00\xff\x0c7\xffF]\xff\x04{pG\x00\xff\x00\xff\x00\xff\x00\xff\xff\xff\xff\xff\x00\xff\xff`\xff`z`\xffh\x03\xff\x07\x03\xffa\xffi\xff\xff\x07\x03\x03+(\xff\x03}\x03\xffa\xffi\x033\x06+\x02\xff\xffi\x04;\x00\xff\x00}\x03{aO\xff\xff2\xffi\x02\xff\x03\xff\xffC\xffh\x1a@{i\xff@O\xff\xff1{i\x01\xff\x03\xff\xffC{h\x0b@\x13C\x18F}\x047\xffF]\xff\x04{pG\x00\x00\xff\xff\xff\xff\x00\xffx`{h\x01;\xff\xff\xff\x7f\x01\xff\x01}\x03\x0f\xff\x0aJ{h\x01;S`\x07!O\xff\xff0\xff\xff\xff\xff\x05K\x00"\xff`\x04K\x07"\x1a`\x00}\x03\x18F\x087\xffF\xff\xff\x00\xff\x10\xff\x00\xff\xff\xff\xff\xff\x00\xffx`xh\xff\xffG\xff\x00\xff\x087\xffF\xff\xff\xff\xff\xff\xff\x00\xff\x03F\xff`z`\xffs\xff\xff^\xffxazh\xffhxi\xff\xff\xff\xff\x02F\xff\xff\x0f0\x11F\x18F\xff\xff_\xff\x00\xff\x187\xffF\xff\xff\xff\xff\xff\xff\x00\xffx`xh\xff\xff\xff\xff\x03F\x18F\x087\xffF\xff\xff\x00\x00\xff\xff\xff\xff\x00\xffx`9`\x00}\x03{aX\xff;h\x1ah\x01!{i\x01\xff\x03\xff\x13@\xff`\xffh\x00+\x00\xffJ\xff;h[h\x01+\x0b\xff;h[h\x02+\x07\xff;h[h\x11+\x03\xff;h[h\x12+0\xff{h\xffh;a{i[\x00\x03"\x02\xff\x03\xff\xffC:i\x13@;a;h\xffh{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\xff`{h[h;a\x01"{i\x02\xff\x03\xff\xffC:i\x13@;a;h[h\x1b\x09\x03\xff\x01\x02{i\x02\xff\x03\xff:i\x13C;a{h:iZ`{h\xffh;a{i[\x00\x03"\x02\xff#46
+[3.437] handleFlashPacket():  Flash write: Address= 0xc0001f8, Length=2984
+[3.437] write():  <11> Tx: $OK#9a
+[3.437] read():  <11> Rx: $vFlashWrite:c000da0:\x03\xff\xffC:i\x13@;a;h\xffh{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\xff`;h[h\x02+\x03\xff;h[h\x12+}\x03\xff{i\xff\x08{h\x082S\xff"0;a{i\x03\xff\x07\x03\xff\x00\x0f"\x02\xff\x03\xff\xffC:i\x13@;a;h\x1ai{i\x03\xff\x07\x03\xff\x00\x02\xff\x03\xff:i\x13C;a{i\xff\x08{h\x0829iC\xff"\x10{h\x1bh;a{i[\x00\x03"\x02\xff\x03\xff\xffC:i\x13@;a;h[h\x03\xff\x03\x02{i[\x00\x02\xff\x03\xff:i\x13C;a{h:i\x1a`;h[h\x03\xff\xffS\x00+\x00\xff\xff\xffZJ{i\xff\x08\x183R\xff}\x030;a{i\x03\xff\x03\x03\xff\x00\x0f"\x02\xff\x03\xff\xffC:i\x13@;a{hRJ\xffB%\xff{hQJ\xffB\x1f\xff{hPJ\xffB\x19\xff{hOJ\xffB\x13\xff{hNJ\xffB\x0d\xff{hMJ\xffB\x07\xff{hLJ\xffB\x01\xff\x06}\x03\x0c\xff\x07}\x03\x0a\xff\x05}\x03\x08\xff\x04}\x03\x06\xff\x03}\x03\x04\xff\x02}\x03\x02\xff\x01}\x03\x00\xff\x00}\x03zi\x02\xff\x03\x02\xff\x00\xff@:i\x13C;a8I{i\xff\x08\x183:iA\xff}\x03 4K\xff\xff\xff0;a\xffh\xffC:i\x13@;a;h[h\x03\xff\xff3\x00+\x03\xff:i\xffh\x13C;a+J;i\xff\xff\xff0)K\xff\xff\xff0;a\xffh\xffC:i\x13@;a;h[h\x03\xff\x003\x00+\x03\xff:i\xffh\x13C;a\x1fJ;i\xff\xff\xff0\x1dK\x1bh;a\xffh\xffC:i\x13@;a;h[h\x03\xff\xff\x13\x00+\x03\xff:i\xffh\x13C;a\x14J;i\x13`\x13K[h;a\xffh\xffC:i\x13@;a;h[h\x03\xff\x00\x13\x00+\x03\xff:i\xffh\x13C;a\x0aJ;iS`{i\x013{a;h\x1ah{i"\xff\x03\xff\x00+\x7f\xff\xff\xff\x00\xff\x1c7\xffF]\xff\x04{pG\x00\xff\x00\xff\x02P\x00\x00\x02R\x00\x04\x02R\x00\x08\x02R\x00\x0c\x02R\x00\x10\x02R\x00\x14\x02R\x00\x18\x02R\xff\xff\xff\xff\x00\xffx`\x0bF{\xff\x13F{p{x\x00+\x03\xffz\xff{h\xffa\x02\xffz\xff{h\xffb\x00\xff\x0c7\xffF]\xff\x04{pG\xff\xff\xff\xff\x00\xffx`\x0bF{\xff{hZi{\xff\x13@\x00+\x03\xffz\xff{h\xffb\x02\xffz\xff{h\xffa\x00\xff\x0c7\xffF]\xff\x04{pG\xff\xff\xff\xff\x00\xff\xff`\x0bFz`{\xff\x00}\x03\xffa\xffh\x1bk\xffa\x1b\xffz\xff\x01!\xffi\x01\xff\x03\xff\x13@{a{i\x00+\x0e\xff\x01"\xffi\x02\xff\x03\xff\xffC\xffi\x13@\xffazh\xffi\x02\xff\x03\xff\xffi\x13C\xffa\xffi\x013\xffaz\xff\xffiB\xff\x03\xff\x00+\xff\xff\xffh\xffi\x1ac\x00\xff}\x047\xffF]\xff\x04{pG\x00\x00\xff\xff\xff\xff\x00\xffx`9`{h\xff\xff\x00_\x0b\xff{h\xff\xff@_\x07\xff{h6J\xffB\x03\xff{h5J\xffB\x11\xff;h\x1bh\x00+\x04\xff;h\x1bh\xff\xff\x00O\x08\xff;h[h\x00+\x06\xff;h[h\xff\xff\xffO\x01\xff\x01}\x03K\xff;h[h;a;h\x1bh:i\x13C;a{h\xff\xff\x00_\x03\xff{h\xff\xff@_\x05\xff}\x03K\xffaO\xff@3\xffa\x04\xff!K\xffaO\xff\xff3\xffa\xffi\x1bh}\x03\xff@B;i\x1aC\xffi\x1a`\xffi[\x0b\x01"\x02\xff\x03\xff\x01;\xff`\xffi\x1ai\xffh\xffC\x1a@;h\xffn\x1aC\xffi\x1aa\xffi[\x0b\xff`\x00}\x03{a\x0c\xff;hzi\x022S\xff"\x10\xffizi@2C\xff"\x10{i\x013{azi\xffh\xffB\xff\xff\x00}\x03\x18F}\x047\xffF]\xff\x04{pG\x00\xff\x00\x00\x03 \x00\x00\x030\x00,\x03P\x000\x03P\xff\xff\x00\xff\x05K\xffh\x04JC\xff\xffC\xff`\x00\xff\xffF]\xff\x04{pG\x00\xff\x00p\x00Pp\xff\x0dN\x00%\x0dL\xff\x1b\xff\x10\xffB\x09\xff\x0bN\x00%\x0bL\x00\xff\x1f\xff\xff\x1b\xff\x10\xffB\x05\xffp\xffV\xff%0\x015\xffG\xff\xffV\xff%0\x015\xffG\xff\xff\xff\x12\x00\x0c\xff\x12\x00\x0c\xff\x12\x00\x0c\xff\x12\x00\x0c\x02D\x03F\xffB\x00\xffpG\x03\xff\x01\x1b\xff\xff\xff\xff\x00\xff\xff\xff\x08\xff\xffFpG\xff\xff\x00\xff\xff\xff\x08\xff\xffFpG\x00\x00\x00\x00#a7
+[3.437] handleFlashPacket():  Flash write: Address= 0xc000da0, Length=1208
+[3.437] write():  <11> Tx: $OK#9a
+[3.437] read():  <11> Rx: $vFlashWrite:c001258:\x00\x00\x00\x00\x00\x00\x00\x00\x01\x02\x03\x04\x06\x07\x08\x09\xff\xff\x01\x00@\x0d\x03\x00\xff\x1a\x06\x00\x005\x0c\x00@B\x0f\x00\xff\xff\x1e\x00\x00\x09=\x00\x00\x12z\x00\x00}\x04\xff\x00\x006n\x01\x00H\xff\x01\x00l\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00#10
+[3.437] handleFlashPacket():  Flash write: Address= 0xc001258, Length=80
+[3.437] write():  <11> Tx: $OK#9a
+[3.438] read():  <11> Rx: $vFlashWrite:c0012a8:\x1d\x02\x00\x0c\x00\x00\x00\x00#cd
+[3.438] handleFlashPacket():  Flash write: Address= 0xc0012a8, Length=8
+[3.438] write():  <11> Tx: $OK#9a
+[3.438] read():  <11> Rx: $vFlashWrite:c0012b0:\xff\x01\x00\x0c\x00\x00\x00\x00#a1
+[3.438] handleFlashPacket():  Flash write: Address= 0xc0012b0, Length=8
+[3.438] write():  <11> Tx: $OK#9a
+[3.438] read():  <11> Rx: $vFlashWrite:c0012b8:\x00\x09=\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00#f2
+[3.438] handleFlashPacket():  Flash write: Address= 0xc0012b8, Length=16
+[3.438] write():  <11> Tx: $OK#9a
+[3.438] read():  <11> Rx: $vFlashWrite:c03e000:\x7f\xff\x7f\xff\xff\xff\xff\xff\x7f\xff\x7f\xff\xff\xff|\xff\x7f\xff\x7f\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00#6f
+[3.438] handleFlashPacket():  Flash write: Address= 0xc03e000, Length=32
+[3.438] write():  <11> Tx: $OK#9a
+[3.439] read():  <11> Rx: $vFlashDone#ea
+[3.439] handleFlashPacket():  Writing to /tmp/ST-LINK_GDB_server_2r9lhB.srec
+[3.443] spawnCubeProgrammer():   ------ Switching to STM32CubeProgrammer ----- 
+[3.444] file_utils_spawn():  Spawning /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin/STM32_Programmer_CLI --connect port=SWD mode=UR reset=hwRst --download /tmp/ST-LINK_GDB_server_2r9lhB.srec --verify --log /tmp/STM32CubeProgrammer_R4mlLa.log
+[4.880] file_utils_spawn():  Return code 256
+[4.880] spawnCubeProgrammer():  Encountered Error when opening /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin/STM32_Programmer_CLI
+[4.880] spawnCubeProgrammer():  20:00:16:488       -------------------------------------------------------------------
+[4.881] spawnCubeProgrammer():  20:00:16:489                        STM32CubeProgrammer v2.4.0                  
+[4.881] spawnCubeProgrammer():  20:00:16:489       -------------------------------------------------------------------
+[4.881] spawnCubeProgrammer():  
+[4.881] spawnCubeProgrammer():  20:00:16:489 
+[4.881] spawnCubeProgrammer():  
+[4.881] spawnCubeProgrammer():  20:00:16:489 Log output file:   /tmp/STM32CubeProgrammer_R4mlLa.log
+[4.881] spawnCubeProgrammer():  20:00:16:495 STLinkUSBDriver.dll loaded
+[4.881] spawnCubeProgrammer():  20:00:16:498 STLinkUSBDriver.dll loaded
+[4.881] spawnCubeProgrammer():  20:00:16:499 STLinkUSBDriver.dll loaded
+[4.881] spawnCubeProgrammer():  20:00:16:499 ST-LINK SN  : 066BFF353638425043085442
+[4.881] spawnCubeProgrammer():  20:00:16:499 ST-LINK FW  : V2J36M26
+[4.881] spawnCubeProgrammer():  20:00:16:500 Voltage     : 3.25V
+[4.881] spawnCubeProgrammer():  20:00:16:510 SWD freq    : 4000 KHz
+[4.881] spawnCubeProgrammer():  20:00:16:510 Connect mode: Under Reset
+[4.881] spawnCubeProgrammer():  20:00:16:510 Reset mode  : Hardware reset
+[4.881] spawnCubeProgrammer():  20:00:16:672 Device ID   : 0x472
+[4.881] spawnCubeProgrammer():  20:00:16:986 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:987 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:987 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:987 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:987 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:988 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:988 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:989 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:989 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:990 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:990 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:990 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:990 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:991 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:991 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:991 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:991 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:991 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:991 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:992 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:992 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:992 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:992 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:993 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:993 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:993 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:993 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:994 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:994 Database: Config 1 is active.
+[4.881] spawnCubeProgrammer():  20:00:16:994 flash loader /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64_1.3.0.202002181050/tools/bin/FlashLoader/0x472.stldr is loaded
+[4.881] spawnCubeProgrammer():  20:00:16:995 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:995 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:995 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:996 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:996 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:996 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:996 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:997 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:997 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:998 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:998 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:998 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:998 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:999 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:999 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:16:999 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:16:999 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:000 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:000 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:000 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:000 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:000 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:000 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:001 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:001 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:002 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:002 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:002 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:002 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:002 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:002 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:003 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:003 Database: Config 1 is active.
+[4.881] spawnCubeProgrammer():  20:00:17:003 Device name : STM32L5xx
+[4.881] spawnCubeProgrammer():  20:00:17:003 Reading data...
+[4.881] spawnCubeProgrammer():  20:00:17:003 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:004 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:004 r ap 0 @0x0BFA05E0 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:004 Flash size  : 512 KBytes
+[4.881] spawnCubeProgrammer():  20:00:17:004 Device type : MCU
+[4.881] spawnCubeProgrammer():  20:00:17:004 Device CPU  : Cortex-M33
+[4.881] spawnCubeProgrammer():  20:00:17:004 
+[4.881] spawnCubeProgrammer():  20:00:17:005 
+[4.881] spawnCubeProgrammer():  
+[4.881] spawnCubeProgrammer():  20:00:17:005 Memory Programming ...
+[4.881] spawnCubeProgrammer():  20:00:17:005 Opening and parsing file: ST-LINK_GDB_server_2r9lhB.srec
+[4.881] spawnCubeProgrammer():  20:00:17:006   File          : ST-LINK_GDB_server_2r9lhB.srec
+[4.881] spawnCubeProgrammer():  20:00:17:006   Size          : 4840 Bytes
+[4.881] spawnCubeProgrammer():  20:00:17:006   Address       : 0x0C000000 
+[4.881] spawnCubeProgrammer():  20:00:17:006 
+[4.881] spawnCubeProgrammer():  
+[4.881] spawnCubeProgrammer():  20:00:17:006 Erasing Segment <0> Address <0x0C000000> Size <4808>Bytes
+[4.881] spawnCubeProgrammer():  20:00:17:006 Erasing memory corresponding to segment 0:
+[4.881] spawnCubeProgrammer():  20:00:17:161 Memory erase...
+[4.881] spawnCubeProgrammer():  20:00:17:161 Bank2 Erasing internal memory sectors [0 2]
+[4.881] spawnCubeProgrammer():  20:00:17:162 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:163 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:163 r ap 0 @0x40022040 0x00000004 bytes
+[4.881] spawnCubeProgrammer():  20:00:17:164 r ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:165 w ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:166 r ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:166 w ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:167 r ap 0 @0x40030400 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:167 w ap 0 @0x40030400 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:168 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:168 w ap 0 @0x40022008 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:168 w ap 0 @0x40022008 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:169 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:169 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:170 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:170 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:170 w ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:171 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:171 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:172 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:172 r ap 0 @0x40022040 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:172 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:173 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:173 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:174 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:174 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:174 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:175 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:175 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:176 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:176 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:177 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:177 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:178 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:178 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:179 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:179 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:179 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:180 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:180 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:181 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:181 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:182 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:182 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:183 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:183 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:183 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:184 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:184 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:185 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:185 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:185 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:186 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:186 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:187 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:187 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:187 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:188 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:188 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:188 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:189 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:189 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:190 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:190 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:190 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:191 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:191 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:192 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:192 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:193 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:193 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:193 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:194 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:194 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:195 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:195 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:195 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:196 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:196 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:197 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:197 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:198 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:198 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:198 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:199 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:199 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:200 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:200 r ap 0 @0x40022040 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:200 r ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:201 w ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:201 r ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:202 w ap 0 @0x40007000 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:202 r ap 0 @0x40030400 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:202 w ap 0 @0x40030400 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:203 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:203 r ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:204 w ap 0 @0x40022028 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:204 r ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:204 w ap 0 @0x40022020 0x00000004 bytes
+[4.882] spawnCubeProgrammer():  20:00:17:205 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:205 r ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:206 w ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:206 r ap 0 @0x40022040 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:206 r ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:207 w ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:207 r ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:208 w ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:208 r ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:208 w ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:209 r ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:209 w ap 0 @0x40022028 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:209 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:210 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:210 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:211 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:211 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:212 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:212 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:213 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:213 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:213 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:214 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:214 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:215 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:215 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:216 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:216 r ap 0 @0x40022020 0x00000004 bytes
+[4.883] spawnCubeProgrammer():  20:00:17:217 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:218 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:218 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:219 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:219 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:220 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:220 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:220 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:221 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:221 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:222 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:222 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:223 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:223 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:224 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:224 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:225 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:225 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:226 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:226 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:227 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:227 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:229 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:229 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:230 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:231 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:231 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:232 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:232 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:233 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:233 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:234 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:234 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:234 r ap 0 @0x40022040 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:235 r ap 0 @0x40007000 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:235 w ap 0 @0x40007000 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:235 r ap 0 @0x40007000 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:236 w ap 0 @0x40007000 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:236 r ap 0 @0x40030400 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:237 w ap 0 @0x40030400 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:237 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:238 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:238 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:238 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:239 w ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:239 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:240 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:240 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:240 r ap 0 @0x40022040 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:241 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:241 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:242 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:242 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:242 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:243 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:244 r ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:246 w ap 0 @0x40022028 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:246 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:247 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:248 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:248 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:249 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:250 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:250 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:251 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:252 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:252 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:253 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:254 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:254 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:254 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:255 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:255 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:256 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:256 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:257 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:257 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:257 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:258 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:258 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:259 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:259 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:259 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:260 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:261 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:261 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:262 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:263 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:263 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:264 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:264 r ap 0 @0x40022020 0x00000004 bytes
+[4.884] spawnCubeProgrammer():  20:00:17:265 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:265 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:265 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:266 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:266 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:267 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:267 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:267 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:268 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:268 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:269 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:269 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:270 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:270 erase: 0264ms
+[4.885] spawnCubeProgrammer():  20:00:17:270 Erasing Segment <1> Address <0x0C03E000> Size <32>Bytes
+[4.885] spawnCubeProgrammer():  20:00:17:270 Erasing memory corresponding to segment 1:
+[4.885] spawnCubeProgrammer():  20:00:17:426 Memory erase...
+[4.885] spawnCubeProgrammer():  20:00:17:427 Bank2 Erasing internal memory sector 124
+[4.885] spawnCubeProgrammer():  20:00:17:427 r ap 0 @0x40022040 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:428 r ap 0 @0x40022040 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:429 r ap 0 @0x40022040 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:429 r ap 0 @0x40007000 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:430 w ap 0 @0x40007000 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:431 r ap 0 @0x40007000 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:432 w ap 0 @0x40007000 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:432 r ap 0 @0x40030400 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:433 w ap 0 @0x40030400 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:433 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:433 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:434 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:434 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:435 w ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:435 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:435 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:436 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:436 r ap 0 @0x40022040 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:437 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:437 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:438 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:438 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:438 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:439 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:439 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:440 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:440 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:440 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:441 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:441 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:441 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:442 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:442 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:443 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:443 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:443 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:444 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:444 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:445 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:445 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:446 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:446 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:447 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:447 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:447 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:448 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:448 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:449 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:449 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:450 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:450 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:450 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:451 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:451 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:452 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:452 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:452 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:453 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:453 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:453 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:454 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:454 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:455 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:455 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:456 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:456 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:456 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:457 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:457 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:458 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:458 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:458 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:459 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:459 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:460 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:460 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:460 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:461 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:461 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:462 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:462 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:463 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:463 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:464 r ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:464 w ap 0 @0x40022028 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:464 r ap 0 @0x40022020 0x00000004 bytes
+[4.885] spawnCubeProgrammer():  20:00:17:464 erase: 0194ms
+[4.885] spawnCubeProgrammer():  20:00:17:464 Download in Progress:
+[4.885] spawnCubeProgrammer():  20:00:17:464   Size          : 4808 Bytes
+[4.885] spawnCubeProgrammer():  20:00:17:465   Address       : 0x0C000000 
+[4.885] spawnCubeProgrammer():  20:00:17:465 
+[4.885] spawnCubeProgrammer():  
+[4.885] spawnCubeProgrammer():  20:00:17:465 Buffer program...
+[4.886] spawnCubeProgrammer():  20:00:17:623 r ap 0 @0x40022040 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:624 r ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:625 w ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:626 r ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:626 w ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:627 r ap 0 @0x50030400 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:628 w ap 0 @0x50030400 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:628 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:628 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:629 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:629 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:630 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:631 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:631 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:631 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:632 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:640 w ap 0 @0x0C000000 0x00000400 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:641 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:642 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:643 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:643 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:652 w ap 0 @0x0C000400 0x00000400 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:653 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:654 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:655 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:656 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:664 w ap 0 @0x0C000800 0x00000400 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:665 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:666 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:667 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:668 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:676 w ap 0 @0x0C000C00 0x00000400 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:677 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:678 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:679 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:680 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:686 w ap 0 @0x0C001000 0x000002C0 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:687 w ap 0 @0x0C0012C0 0x00000010 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:688 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:689 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:689 Segment[0] downloaded successfully
+[4.886] spawnCubeProgrammer():  20:00:17:689   Size          : 32 Bytes
+[4.886] spawnCubeProgrammer():  20:00:17:690   Address       : 0x0C03E000 
+[4.886] spawnCubeProgrammer():  20:00:17:690 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:690 Buffer program...
+[4.886] spawnCubeProgrammer():  20:00:17:851 r ap 0 @0x40022040 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:852 r ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:852 w ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:853 r ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:853 w ap 0 @0x40007000 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:854 r ap 0 @0x50030400 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:854 w ap 0 @0x50030400 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:855 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:855 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:856 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:856 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:856 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:857 w ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:857 r ap 0 @0x50022024 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:858 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:858 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:858 w ap 0 @0x0C03E000 0x00000020 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:859 r ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:859 w ap 0 @0x5002202C 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:859 Segment[1] downloaded successfully
+[4.886] spawnCubeProgrammer():  20:00:17:859 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:859 File download complete
+[4.886] spawnCubeProgrammer():  20:00:17:859 Time elapsed during download operation: 00:00:00.853
+[4.886] spawnCubeProgrammer():  20:00:17:860 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:860 
+[4.886] spawnCubeProgrammer():  Verifying ...
+[4.886] spawnCubeProgrammer():  20:00:17:860 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:860 Read progress:
+[4.886] spawnCubeProgrammer():  20:00:17:860 Reading data...
+[4.886] spawnCubeProgrammer():  20:00:17:860 r ap 0 @0x40022040 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:861 r ap 0 @0x40022040 0x00000004 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:869 r ap 0 @0x0C000000 0x00000400 bytes
+[4.886] spawnCubeProgrammer():  20:00:17:869 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:869 Error: Data mismatch found at address  0x0C000000 (byte = 0xFF instead of 0x00)
+[4.886] spawnCubeProgrammer():  20:00:17:869 
+[4.886] spawnCubeProgrammer():  
+[4.886] spawnCubeProgrammer():  20:00:17:869 Error: Download verification failed
+[4.886] spawnCubeProgrammer():  20:00:17:869 
+[4.886] spawnCubeProgrammer():  
+[4.887] spawnCubeProgrammer():   ------ Switching context ----- 
+[4.887] handleFlashPacket():  Error in STM32CubeProgrammer
+[4.887] write():  <11> Tx: $E05#aa
+[4.889] read():  <11> Rx: $qXfer:threads:read::0,bfb#fb

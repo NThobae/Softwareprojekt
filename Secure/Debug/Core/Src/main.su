@@ -1,0 +1,5 @@
+main.c:71:5:main	8	static
+main.c:123:13:NonSecure_Init	24	static,ignoring_inline_asm
+main.c:144:13:MX_GTZC_Init	224	static
+main.c:214:13:MX_GPIO_Init	40	static
+main.c:245:6:Error_Handler	4	static
