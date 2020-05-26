@@ -20,11 +20,14 @@ Will man diese Applikation auf dem Board testen, muss man den Board erst richtig
 - STM32CubeProgrammer starten und mit Board verbinden.
 - Bei der ST Link Konfiguration einen Firmware Update starten.
 - Option Bytes wie folgt konfigurieren:
+
   TZEN =1 (Haken setzen)        //aktiviert Trustzone auf dem Board
+  
   DBANK =1                      //teilt den FLASH (512KByte) in 2 Regionen (Bank1 und Bank2)
+  
   Secure Area 1:  SECWM1_PSTRT=0x0  SECWM1_PEND=0x7F  wenn SECWM1_PSTRT < SECWM1_PEND, ist der Secure Bereich aktiviert für diese Bank.
-                                                      Eine Bank besteht aus 128 mal 2 Kbyte Blöcken. In diesen Fall (0x0-0x7f) werden alle Blöcke als Secure initialisiert.
-                                                      Das heißt Bank1 ist komplett Secure.
+                                                      Eine Bank besteht aus 128 mal 2 Kbyte Blöcken. In diesen Fall (0x0-0x7f) werden alle Blöcke als Secure initialisiert. Das heißt Bank1 ist komplett Secure.
+                                                      
   Secure Area 2:  SECWM2_PSTRT=0x1  SECWM2_PEND=0x0   wenn SECWM1_PSTRT > SECWM1_PEND, ist die komplette Bank Non-Secure. 
                                                       Das heißt, Bank2 ist Non-Secure.
 
