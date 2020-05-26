@@ -6,12 +6,13 @@ Weitere Features folgen.
 Diese Applikation läuft auf dem NUCLEO-L552ZE-Q Board von STMicroelectronics.
 
 Die Schnittstelle zwischen Secure und Non-Secure bilden die beiden Dateien secure_nsc.h (im Non-Secure Bereich) und secure_nsc_c (im Secure Bereich)
-In secure_nsc.h ist die Funktion Toggle_Pin() definiert. Diese Funktion kann die Non-Secure Applikation bei einem Tastendruck ausführen.
+In secure_nsc.h ist die Funktion Toggle_Pin() definiert. Diese Funktion kann die Non-Secure Applikation bei einem Tastendruck ausführen. 
 
-Toggle_Pin() wird dann im Secure Bereich ausgeführt (secure_nsc.c)
+Toggle_Pin() wird dann im Secure Bereich ausgeführt (secure_nsc.c) und die LED getoggelt. 
 
-
+--------------------------------------------------------------------
 Will man diese Applikation auf dem Board testen, muss man den Board erst richtig initialisieren!
+--------------------------------------------------------------------
 
 1. Schritt:
 
