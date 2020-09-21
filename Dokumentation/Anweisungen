@@ -1,1 +1,59 @@
+Ich würde zumindest für den Einstieg zunächst die IDE „STM32CubeIDE“ empfehlen:
+https://www.st.com/en/development-tools/stm32cubeide.html#get-software
 
+Diese ist für alle Plattformen verfügbar und bringt ein paar komfortable Features mit. 
+Bei Einrichtung eines neuen Projekts kann man die Zielplattform auswählen und bekommt 
+dann schon ein paar Startup-Code-Files geschenkt.
+Damit kommt man dann recht schnell dazu, dass das Board mit einem spricht.
+Richtet euch doch mal diese IDE ein und versucht herauszufinden, ob und wie man die Dateien 
+aus dem STM MCU Firmware Package importieren kann. Meine Hoffnung wäre (da beides aus demselben Haus kommt), 
+dass in dem Firmware Package vielleicht sogar schon entsprechende Projektdateien enthalten sind.
+
+#####################################################################################################
+
+Wenn ihr die IDE heruntergeladen habt, könnt ihr ein neues Projekt für die Ziel-Plattform wie folgt erzeugen:
+File —> New —> STM32 Project öffnet ein neues Fenster. Das Laden kann einen Moment dauern.
+
+In diesem Fenster wählt ihr oben links den Tab „Board Selector“ aus und gebt in das Suchfeld
+unter „Part Number Search“ die Kennung eures Boards ein: „NUCLEO-L552ZE-Q“. 
+Dann wählt ihr das Board in der Übersicht rechts aus. Nun habt ihr die Möglichkeit, 
+auch direkt das Datasheet oder weitere Docs zu dem Board von dort herunterzuladen.
+Auf jeden Fall empfehlenswert sind das Datasheet und das User Manual. 
+Ihr werdet voraussichtlich viel mit Dokumentationen arbeiten müssen. Wollt ihr das neue Projekt erzeugen, klickt ihr unten rechts auf „Next“. 
+
+#####################################################################################################
+
+Attached Files: telegram-cloud-document-4-5897780835246934197.jpg
+
+Dies ist dann die Eingabemaske für die weiteren Projektinformationen.
+Achtet darauf, unten beim „Targeted Project Type“ Empty auszuwählen,
+außer ihr habt euch so sehr eingelesen, dass wir wisst, was die andere Auswahl macht 😉 
+Was man schon einmal machen könnte, bevor die Boards angekommen sind: 
+Herausfinden, welchen Unterschied der Punkt „Enable Trustzone“ macht.
+Welche zusätzlichen Projektdateien bekommt ihr dann geschenkt? 
+Was machen die? Was muss man tun, um den Trustzone-Support des Boards selbst zu implementieren, 
+wenn man nicht auf diese Funktion der IDE zurückgreifen möchte.
+
+######################################################################################################
+
+Wenn die Boards dann angekommen sind, können die ersten Schritte in 2 Richtungen gehen. 
+Ihr könnt euch sofort auf das MCU Firmware Package stürzen und versuchen herauszufinden, wie ihr das aufs Board bekommt.
+Oder ihr macht euch erst noch etwas besser mit dem Board vertraut. 
+Wenn ihr euch für letzteres entscheidet könnte man zum Beispiel mal:
+a) eine LED blinken lassen
+b) ein Hello World über die Debug-Schnittstelle ausgeben
+
+a) ist relativ generisch. Wenn ihr hier keinen Beispielcode oder ein Youtube-Video zu genau diesem Board findet,
+hilft euch sehr wahrscheinlich auch ein Tutorial zu irgendeinem anderen STM Nucleo. Was muss man tun? 
+In den Docs herausfinden, welche LEDs es gibt. Sich für eine LED entscheiden. Herausfinden,
+über welche GPIO Pins diese LED gesteuert wird. Dann die sogenannte Peripheral Clock für diesen GPIO-Block enablen,
+indem man das entsprechende Bit im entsprechenden Register setzt. Ich kenne dieses konkrete Board auch noch nicht,
+in einem anderen STM Board heißt das Register zB RCC_AHB1ENR. AHB1 ist der Bus, an dem dieser GPIO-Block dran hängt. 
+Wenn ihr hier Hilfe braucht und euch nicht recht in den Docs zurechtfindet, meldet euch bitte. 
+Wenn die Clock aktiviert ist, dann muss das entsprechende Mode Register für diesen GPIO Pin auf Output gesetzt werden. 
+Denn wir wollen den Zustand der LED ja schreiben und nicht lesen.
+Und zuletzt dann das Output Data Register für diesen GPIO Pin am entsprechenden Bit setzen. 
+Hier muss man zuerst mal ganz viel in den Docs herumlesen, bis man herausgefunden hat, 
+wie die Register heißen und welche Bits man jeweils setzen möchte.
+Das kann man auch schon machen, bevor man das echte Board hat.
+Den Code könnte man auch schon schreiben und dann testen, sobald das Board angekommen ist.
