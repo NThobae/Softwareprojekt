@@ -12,7 +12,7 @@ die alternative Software Verschlüsselung zu nutzen, da das STM32L562E-DK Board 
 Außerdem mussten wir die UART Schnittstelle dem L552ZE-Q Board entsprechend umstellen. Details dazu weiter unten in Teil 3 dieses READMEs.
 
 Diese Änderungen haben wir in einer neuen Projektdatei vorgenommen mit dieser kann man die TF-M mit geringem aufwand auf dem L552ZE-Q Board
-ausführen. Diese Projekt Datei haben wir bei Google Docs hochgeladen (https://drive.google.com/drive/folders/1VVaHSrqnSJrWkabPbWpEZHw9KNeienB4?usp=sharing).
+ausführen. Diese Projekt Datei haben wir bei Google Docs hochgeladen (https://drive.google.com/drive/folders/12j0w7mK7if0DdAWaCk-CcVwCTs7QZKLO?usp=sharing).
 Die gesamte Ordnerstruktur ist relevant für den build-Prozess der Firmware, der Ordner sollte vollständig runtergeladen und entpackt werden.
 Neben den Boardspezifischen Anpassungen des Firmware Pakets haben wir Fehler behoben die von Entwicklerseite in der Firmware gemacht worden. Diese Änderungen
 sind in dem Projektordner bei Google Docs bereits behoben.
