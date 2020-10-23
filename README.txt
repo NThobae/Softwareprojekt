@@ -7,7 +7,7 @@ Um einen schnellen Start in die Nutzung von Trusted Firmware-M zu ermöglichen h
 
 Die verwendete TF-M stammt aus dem STM32CubeL5 Github Repository (https://github.com/STMicroelectronics/STM32CubeL5).
 In dem Repository findet man eine Projekt Datei der TF-M für das STM32L562E-DK Board.
-Um diese Projektdatei für das L552ZE-Q Board anzupassen mussten wir unter anderem Teile der Hardware Verschlüsselung deaktivieren um,
+Um diese Projektdatei für das L552ZE-Q Board anzupassen mussten wir unter anderem Teile der Hardware Verschlüsselung deaktivieren, um
 die alternative Software Verschlüsselung zu nutzen, da das STM32L562E-DK Board über Hardware verfügt die dem L552ZE-Q Board fehlt.
 Außerdem mussten wir die UART Schnittstelle dem L552ZE-Q Board entsprechend umstellen. Details dazu weiter unten in Teil 3 dieses READMEs.
 
