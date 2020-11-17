@@ -15,7 +15,7 @@ Außerdem mussten wir die UART Schnittstelle dem L552ZE-Q Board entsprechend ums
 
 Diese Änderungen befinden sich unter /TF-M_ported_for_L552ZE-Q/.
 Neben den Boardspezifischen Anpassungen des Firmware Pakets haben wir Fehler behoben die von Entwicklerseite in der Firmware gemacht worden. 
-Die gemachten Anpassungen sind vergleichbar mit denen die wir für die SBSFU Firmware gemacht haben und können unter https://github.com/NThobae/Softwareprojekt/blob/master/Dokumentation/Softwareprojekt___Dokumentation.pdf in Abschnitt 5 - "SBSFU Firmware" nachgelesen werden. Hauptsächlich wurden falsche Pfadangaben und Compilierbefehle behoben.
+Die gemachten Anpassungen sind vergleichbar mit denen die wir für die SBSFU Firmware gemacht haben und können unter https://github.com/NThobae/Softwareprojekt/blob/master/vorgaenger/Dokumentation/Softwareprojekt___Dokumentation.pdf in Abschnitt 5 - "SBSFU Firmware" nachgelesen werden. Hauptsächlich wurden falsche Pfadangaben und Compilierbefehle behoben.
 
 
 ## Anleitung
