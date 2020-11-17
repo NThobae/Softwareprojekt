@@ -14,6 +14,7 @@ die alternative Software Verschlüsselung zu nutzen, da das STM32L562E-DK Board 
 Außerdem mussten wir die UART Schnittstelle dem L552ZE-Q Board entsprechend umstellen. Details dazu weiter unten in Teil 3 dieses READMEs.
 
 Diese Änderungen befinden sich unter /TF-M_ported_for_L552ZE-Q/.
+(Das original wie es unter drive zu finden war ist (hier)[https://github.com/KurfuerstPilz/Softwareprojekt/releases/download/v0.0.1/Softwareprojekt-20201117T142257Z-001.zip])
 Neben den Boardspezifischen Anpassungen des Firmware Pakets haben wir Fehler behoben die von Entwicklerseite in der Firmware gemacht worden. 
 Die gemachten Anpassungen sind vergleichbar mit denen die wir für die SBSFU Firmware gemacht haben und können unter https://github.com/NThobae/Softwareprojekt/blob/master/vorgaenger/Dokumentation/Softwareprojekt___Dokumentation.pdf in Abschnitt 5 - "SBSFU Firmware" nachgelesen werden. Hauptsächlich wurden falsche Pfadangaben und Compilierbefehle behoben.
 
