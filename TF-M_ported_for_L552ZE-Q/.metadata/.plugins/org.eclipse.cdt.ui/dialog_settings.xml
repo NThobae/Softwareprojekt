@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="../../../../../../Drivers/CMSIS/Include"/>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="askReindex" value="true"/>
+		<item key="askReindex.detail" value="1"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="806"/>
+		<item key="size.height" value="193"/>
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="__HAL_PWR_VDDIO2_ENABLE"/>
+			<item value="*vddio*"/>
+			<item value="vddio"/>
+			<item value="LPUART1_BASE_NS"/>
+			<item value="LPUART1_NS"/>
+			<item value="LPUART1"/>
+			<item value="__HAL_RCC_LPUART1_CLK_ENABLE"/>
+			<item value="HAL_MspInit"/>
+			<item value="TFM_BL2_CopySharedData"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_X_ORIGIN" value="738"/>
+		<item key="DIALOG_Y_ORIGIN" value="223"/>
+		<item key="DIALOG_WIDTH" value="898"/>
+		<item key="DIALOG_HEIGHT" value="470"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>
