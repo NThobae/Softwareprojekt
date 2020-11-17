@@ -7,7 +7,7 @@ Hauptziel unseres Softwareprojekts war es die Trusted Firmware-M (TF-M) auf dem 
 Neben diesem Hauptziel haben wir uns noch mit möglichen Angriffen auf die Trusted Firmware beschäftigt welche in der Dokumentation (Dokumentation/Softwareprojekt___Dokumentation.pdf) zu finden sind.
 Um einen schnellen Start in die Nutzung von Trusted Firmware-M zu ermöglichen haben wir in diesem README die wichtistgen Informationen übersichtlich dargestellt.
 
-Die verwendete TF-M stammt aus dem STM32CubeL5 Github Repository (https://github.com/STMicroelectronics/STM32CubeL5).
+Die verwendete TF-M stammt aus dem [STM32CubeL5 Github Repository](https://github.com/STMicroelectronics/STM32CubeL5).
 In dem Repository findet man eine Projekt Datei der TF-M für das STM32L562E-DK Board.
 Um diese Projektdatei für das L552ZE-Q Board anzupassen mussten wir unter anderem Teile der Hardware Verschlüsselung deaktivieren, um
 die alternative Software Verschlüsselung zu nutzen, da das STM32L562E-DK Board über Hardware verfügt die dem L552ZE-Q Board fehlt.
